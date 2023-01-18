@@ -1,0 +1,3 @@
+[D-BUS Service]
+Name=org.gnome.GConf
+Exec=/MSYS2/mingw64/libexec/gconfd-2
