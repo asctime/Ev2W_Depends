@@ -7,7 +7,8 @@ This can be any TCPv4 port you want, AFAIK.<br>
 2. start (or autostart) the DBUS server executable. There are two options:<br>
 "dbus-launch.exe" hides it in the background like a pseudo-service<br>
 "dbus-daemon.exe --session" runs it in foreground, useful for debugging<>br>
-3. Grant any needed network/firewall permissions.<br><br>
+3. Grant any needed network/firewall permissions.<br>
+4. Test with include gconf-editor.exe<br><br>
 
 <strong>GCONF Configurations for Windows</strong><br>
 1. Make-install GCONF <u>after</u> DBUS is installed, configured and running.
