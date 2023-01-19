@@ -6,7 +6,8 @@ DBUS_SESSION_BUS_ADDRESS=tcp:host=localhost,bind=*,port=33445,family=ipv4
 This can be any TCPv4 port you want, AFAIK.<br>
 2. start (or autostart) the DBUS server executable. There are two options:<br>
 "dbus-launch.exe" hides it in the background like a pseudo-service<br>
-"dbus-daemon.exe --session" runs it in foreground, useful for debugging<br><br><br>
+"dbus-daemon.exe --session" runs it in foreground, useful for debugging<br><br>
+
 <strong>GCONF Configurations for Windows</strong><br>
 1. Make-install GCONF <u>after</u> DBUS is installed, configured and running.
 2. Once GCONF2 is compiled and installed, edit /MSYS2/mingw64/etc/gconf/2/path:<code>
