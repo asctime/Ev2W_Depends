@@ -1,0 +1,98 @@
+AC_INIT([GConf Editor],
+        [2.32.0],
+        [http://bugzilla.gnome.org/enter_bug.cgi?product=gconf-editor],
+        [gconf-editor])
+AC_CONFIG_SRCDIR([src/main.c])
+
+AM_INIT_AUTOMAKE([1.9 foreign no-dist-gzip dist-bzip2])
+AC_CONFIG_HEADERS([config.h])
+
+IT_PROG_INTLTOOL([0.35.0])
+
+AC_PROG_CC
+AC_HEADER_STDC
+AC_PROG_LIBTOOL
+AC_PATH_PROG(GCONFTOOL, gconftool-2)
+AM_GCONF_SOURCE_2
+
+AC_CONFIG_MACRO_DIR([m4])
+GNOME_DOC_INIT
+
+changequote(,)dnl
+if test "x$GCC" = "xyes"; then
+  case " $CFLAGS " in
+  *[\ \	]-Wall[\ \	]*) ;;
+  *) CFLAGS="$CFLAGS -Wall" ;;
+  esac
+fi
+changequote([,])dnl
+
+AC_MSG_CHECKING([which gtk+ version to compile against])
+AC_ARG_WITH([gtk],
+  [AS_HELP_STRING([--with-gtk=2.0|3.0],[which gtk+ version to compile against (default: 2.0)])],
+  [case "$with_gtk" in
+     2.0|3.0) ;;
+     *) AC_MSG_ERROR([invalid gtk version specified]) ;;
+   esac],
+  [with_gtk=2.0])
+AC_MSG_RESULT([$with_gtk])
+
+case "$with_gtk" in
+  2.0) GTK_API_VERSION=2.0
+       GTK_REQUIRED=2.18.0
+       ;;
+  3.0) GTK_API_VERSION=3.0
+       GTK_REQUIRED=2.90.4
+       ;;
+esac
+
+PKG_CHECK_MODULES(GCONF_EDITOR,
+		  gconf-2.0 >= 2.9.2
+		  gtk+-$GTK_API_VERSION >= $GTK_REQUIRED
+		  dbus-glib-1)
+
+AC_PATH_PROG(GLIB_GENMARSHAL, glib-genmarshal)
+
+GETTEXT_PACKAGE=gconf-editor
+AC_SUBST(GETTEXT_PACKAGE)
+AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE, "$GETTEXT_PACKAGE", [The gettext package])
+
+AM_GLIB_GNU_GETTEXT
+
+GNOME_MAINTAINER_MODE_DEFINES
+GNOME_COMMON_INIT
+GNOME_COMPILE_WARNINGS([maximum])
+
+dnl Get the GConf defaults source, and sed it to make the mandatory source.
+GCONF_DEFAULTS_SOURCE=`gconftool-2 --get-default-source`
+AC_ARG_WITH(gconf-defaults-source,
+  AC_HELP_STRING([--with-gconf-defaults-source],
+                 [The GConf source of the default values]),
+        GCONF_DEFAULTS_SOURCE="$withval",)
+AC_DEFINE_UNQUOTED(GCONF_DEFAULTS_SOURCE, "$GCONF_DEFAULTS_SOURCE", [GConf defaults source])
+AC_MSG_RESULT([Using config source $GCONF_DEFAULTS_SOURCE for default values])
+
+GCONF_MANDATORY_SOURCE=`echo $GCONF_DEFAULTS_SOURCE | sed -e s/gconf.xml.defaults/gconf.xml.mandatory/`
+AC_ARG_WITH(gconf-mandatory-source,
+  AC_HELP_STRING([--with-gconf-mandatory-source],
+                 [The GConf source of the mandatory values]),
+        GCONF_MANDATORY_SOURCE="$withval",)
+AC_DEFINE_UNQUOTED(GCONF_MANDATORY_SOURCE, "$GCONF_MANDATORY_SOURCE", [GConf mandatory source])
+AC_MSG_RESULT([Using config source $GCONF_MANDATORY_SOURCE for mandatory values])
+
+AC_CONFIG_FILES([
+Makefile
+data/Makefile
+data/gconf-editor.desktop.in
+data/icons/Makefile
+docs/Makefile
+src/Makefile
+po/Makefile.in
+])
+
+AC_OUTPUT
+
+echo "
+Configuration Sources:
+GConf default values source:	${GCONF_DEFAULTS_SOURCE}
+GConf mandatory values source:	${GCONF_MANDATORY_SOURCE}"

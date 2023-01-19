@@ -1,0 +1,196 @@
+#---------------------------------------------------------------------------
+# Project related configuration options
+#---------------------------------------------------------------------------
+PROJECT_NAME           = Libical
+PROJECT_NUMBER         = 2.0
+OUTPUT_DIRECTORY       = apidocs
+#CREATE_SUBDIRS         = NO
+OUTPUT_LANGUAGE        = English
+BRIEF_MEMBER_DESC      = YES
+REPEAT_BRIEF           = YES
+ABBREVIATE_BRIEF       = "The \$name class" \
+                         "The \$name widget" \
+                         "The \$name file" \
+                         is \
+                         provides \
+                         specifies \
+                         contains \
+                         represents \
+                         a \
+                         an \
+                         the
+ALWAYS_DETAILED_SEC    = NO
+INLINE_INHERITED_MEMB  = NO
+FULL_PATH_NAMES        = NO
+STRIP_FROM_PATH        = 
+STRIP_FROM_INC_PATH    = 
+SHORT_NAMES            = NO
+JAVADOC_AUTOBRIEF      = NO
+MULTILINE_CPP_IS_BRIEF = NO
+INHERIT_DOCS           = YES
+SEPARATE_MEMBER_PAGES  = NO
+TAB_SIZE               = 8
+OPTIMIZE_OUTPUT_FOR_C  = YES
+OPTIMIZE_OUTPUT_JAVA   = NO
+BUILTIN_STL_SUPPORT    = NO
+DISTRIBUTE_GROUP_DOC   = NO
+SUBGROUPING            = YES
+#---------------------------------------------------------------------------
+# Build related configuration options
+#---------------------------------------------------------------------------
+EXTRACT_ALL            = NO
+EXTRACT_PRIVATE        = NO
+EXTRACT_STATIC         = YES
+EXTRACT_LOCAL_CLASSES  = YES
+EXTRACT_LOCAL_METHODS  = NO
+HIDE_UNDOC_MEMBERS     = NO
+HIDE_UNDOC_CLASSES     = NO
+HIDE_FRIEND_COMPOUNDS  = YES
+HIDE_IN_BODY_DOCS      = NO
+INTERNAL_DOCS          = YES
+CASE_SENSE_NAMES       = YES
+HIDE_SCOPE_NAMES       = NO
+SHOW_INCLUDE_FILES     = YES
+INLINE_INFO            = YES
+SORT_MEMBER_DOCS       = YES
+SORT_MEMBERS_CTORS_1ST = YES
+SORT_BRIEF_DOCS        = YES
+SORT_BY_SCOPE_NAME     = NO
+GENERATE_TODOLIST      = NO
+GENERATE_TESTLIST      = YES
+GENERATE_BUGLIST       = YES
+GENERATE_DEPRECATEDLIST = YES
+ENABLED_SECTIONS       = 
+MAX_INITIALIZER_LINES  = 30
+SHOW_USED_FILES        = YES
+FILE_VERSION_FILTER    = 
+#---------------------------------------------------------------------------
+# configuration options related to warning and progress messages
+#---------------------------------------------------------------------------
+QUIET                  = NO
+WARNINGS               = YES
+WARN_IF_UNDOCUMENTED   = YES
+WARN_IF_DOC_ERROR      = YES
+WARN_NO_PARAMDOC       = YES
+WARN_FORMAT            = "\$file:\$line: \$text"
+WARN_LOGFILE           = doxygen.log
+#---------------------------------------------------------------------------
+# configuration options related to the input files
+#---------------------------------------------------------------------------
+INPUT                  =  D:/Download/MinGW-64-souorce/libical-2.0.0/mingw64/src/libical/ical.h D:/Download/MinGW-64-souorce/libical-2.0.0/mingw64/src/libical/icalversion.h D:/Download/MinGW-64-souorce/libical-2.0.0/mingw64/src/libicalss/icalss.h D:/Download/MinGW-64-souorce/libical-2.0.0/src/libical/astime.h D:/Download/MinGW-64-souorce/libical-2.0.0/src/libical/caldate.c D:/Download/MinGW-64-souorce/libical-2.0.0/src/libical/icalarray.c D:/Download/MinGW-64-souorce/libical-2.0.0/src/libical/icalarray.h D:/Download/MinGW-64-souorce/libical-2.0.0/src/libical/icalattach.c D:/Download/MinGW-64-souorce/libical-2.0.0/src/libical/icalattach.h D:/Download/MinGW-64-souorce/libical-2.0.0/src/libical/icalattachimpl.h D:/Download/MinGW-64-souorce/libical-2.0.0/src/libical/icalcomponent.c D:/Download/MinGW-64-souorce/libical-2.0.0/src/libical/icalcomponent.h D:/Download/MinGW-64-souorce/libical-2.0.0/src/libical/icalduration.c D:/Download/MinGW-64-souorce/libical-2.0.0/src/libical/icalduration.h D:/Download/MinGW-64-souorce/libical-2.0.0/src/libical/icalenums.c D:/Download/MinGW-64-souorce/libical-2.0.0/src/libical/icalenums.h D:/Download/MinGW-64-souorce/libical-2.0.0/src/libical/icalerror.c D:/Download/MinGW-64-souorce/libical-2.0.0/src/libical/icalerror.h D:/Download/MinGW-64-souorce/libical-2.0.0/src/libical/icallangbind.c D:/Download/MinGW-64-souorce/libical-2.0.0/src/libical/icallangbind.h D:/Download/MinGW-64-souorce/libical-2.0.0/src/libical/icalmemory.c D:/Download/MinGW-64-souorce/libical-2.0.0/src/libical/icalmemory.h D:/Download/MinGW-64-souorce/libical-2.0.0/src/libical/icalmime.c D:/Download/MinGW-64-souorce/libical-2.0.0/src/libical/icalmime.h D:/Download/MinGW-64-souorce/libical-2.0.0/src/libical/icalparameter.c D:/Download/MinGW-64-souorce/libical-2.0.0/src/libical/icalparameter.h D:/Download/MinGW-64-souorce/libical-2.0.0/src/libical/icalparameter_cxx.h D:/Download/MinGW-64-souorce/libical-2.0.0/src/libical/icalparameterimpl.h D:/Download/MinGW-64-souorce/libical-2.0.0/src/libical/icalparser.c D:/Download/MinGW-64-souorce/libical-2.0.0/src/libical/icalparser.h D:/Download/MinGW-64-souorce/libical-2.0.0/src/libical/icalperiod.c D:/Download/MinGW-64-souorce/libical-2.0.0/src/libical/icalperiod.h D:/Download/MinGW-64-souorce/libical-2.0.0/src/libical/icalproperty.c D:/Download/MinGW-64-souorce/libical-2.0.0/src/libical/icalproperty.h D:/Download/MinGW-64-souorce/libical-2.0.0/src/libical/icalproperty_cxx.h D:/Download/MinGW-64-souorce/libical-2.0.0/src/libical/icalrecur.c D:/Download/MinGW-64-souorce/libical-2.0.0/src/libical/icalrecur.h D:/Download/MinGW-64-souorce/libical-2.0.0/src/libical/icalrestriction.h D:/Download/MinGW-64-souorce/libical-2.0.0/src/libical/icaltime.c D:/Download/MinGW-64-souorce/libical-2.0.0/src/libical/icaltime.h D:/Download/MinGW-64-souorce/libical-2.0.0/src/libical/icaltimezone.c D:/Download/MinGW-64-souorce/libical-2.0.0/src/libical/icaltimezone.h D:/Download/MinGW-64-souorce/libical-2.0.0/src/libical/icaltimezoneimpl.h D:/Download/MinGW-64-souorce/libical-2.0.0/src/libical/icaltypes.c D:/Download/MinGW-64-souorce/libical-2.0.0/src/libical/icaltypes.h D:/Download/MinGW-64-souorce/libical-2.0.0/src/libical/icaltz-util.c D:/Download/MinGW-64-souorce/libical-2.0.0/src/libical/icaltz-util.h D:/Download/MinGW-64-souorce/libical-2.0.0/src/libical/icalvalue.c D:/Download/MinGW-64-souorce/libical-2.0.0/src/libical/icalvalue.h D:/Download/MinGW-64-souorce/libical-2.0.0/src/libical/icalvalue_cxx.h D:/Download/MinGW-64-souorce/libical-2.0.0/src/libical/icalvalueimpl.h D:/Download/MinGW-64-souorce/libical-2.0.0/src/libical/icptrholder_cxx.h D:/Download/MinGW-64-souorce/libical-2.0.0/src/libical/libical_ical_export.h D:/Download/MinGW-64-souorce/libical-2.0.0/src/libical/pvl.c D:/Download/MinGW-64-souorce/libical-2.0.0/src/libical/pvl.h D:/Download/MinGW-64-souorce/libical-2.0.0/src/libical/sspm.c D:/Download/MinGW-64-souorce/libical-2.0.0/src/libical/sspm.h D:/Download/MinGW-64-souorce/libical-2.0.0/src/libical/vcomponent_cxx.h D:/Download/MinGW-64-souorce/libical-2.0.0/src/libicalss/icalbdbset.c D:/Download/MinGW-64-souorce/libical-2.0.0/src/libicalss/icalbdbset.h D:/Download/MinGW-64-souorce/libical-2.0.0/src/libicalss/icalbdbset_cxx.h D:/Download/MinGW-64-souorce/libical-2.0.0/src/libicalss/icalbdbsetimpl.h D:/Download/MinGW-64-souorce/libical-2.0.0/src/libicalss/icalcalendar.c D:/Download/MinGW-64-souorce/libical-2.0.0/src/libicalss/icalcalendar.h D:/Download/MinGW-64-souorce/libical-2.0.0/src/libicalss/icalclassify.c D:/Download/MinGW-64-souorce/libical-2.0.0/src/libicalss/icalclassify.h D:/Download/MinGW-64-souorce/libical-2.0.0/src/libicalss/icalcluster.c D:/Download/MinGW-64-souorce/libical-2.0.0/src/libicalss/icalcluster.h D:/Download/MinGW-64-souorce/libical-2.0.0/src/libicalss/icalclusterimpl.h D:/Download/MinGW-64-souorce/libical-2.0.0/src/libicalss/icaldirset.c D:/Download/MinGW-64-souorce/libical-2.0.0/src/libicalss/icaldirset.h D:/Download/MinGW-64-souorce/libical-2.0.0/src/libicalss/icaldirsetimpl.h D:/Download/MinGW-64-souorce/libical-2.0.0/src/libicalss/icalfileset.c D:/Download/MinGW-64-souorce/libical-2.0.0/src/libicalss/icalfileset.h D:/Download/MinGW-64-souorce/libical-2.0.0/src/libicalss/icalfilesetimpl.h D:/Download/MinGW-64-souorce/libical-2.0.0/src/libicalss/icalgauge.c D:/Download/MinGW-64-souorce/libical-2.0.0/src/libicalss/icalgauge.h D:/Download/MinGW-64-souorce/libical-2.0.0/src/libicalss/icalgaugeimpl.h D:/Download/MinGW-64-souorce/libical-2.0.0/src/libicalss/icalmessage.c D:/Download/MinGW-64-souorce/libical-2.0.0/src/libicalss/icalmessage.h D:/Download/MinGW-64-souorce/libical-2.0.0/src/libicalss/icalset.c D:/Download/MinGW-64-souorce/libical-2.0.0/src/libicalss/icalset.h D:/Download/MinGW-64-souorce/libical-2.0.0/src/libicalss/icalspanlist.c D:/Download/MinGW-64-souorce/libical-2.0.0/src/libicalss/icalspanlist.h D:/Download/MinGW-64-souorce/libical-2.0.0/src/libicalss/icalspanlist_cxx.h D:/Download/MinGW-64-souorce/libical-2.0.0/src/libicalss/icalsslexer.c D:/Download/MinGW-64-souorce/libical-2.0.0/src/libicalss/icalssyacc.c D:/Download/MinGW-64-souorce/libical-2.0.0/src/libicalss/icalssyacc.h D:/Download/MinGW-64-souorce/libical-2.0.0/src/libicalss/libical_icalss_export.h D:/Download/MinGW-64-souorce/libical-2.0.0/src/libicalvcal/icalvcal.c D:/Download/MinGW-64-souorce/libical-2.0.0/src/libicalvcal/icalvcal.h D:/Download/MinGW-64-souorce/libical-2.0.0/src/libicalvcal/libical_vcal_export.h D:/Download/MinGW-64-souorce/libical-2.0.0/src/libicalvcal/vcaltmp.c D:/Download/MinGW-64-souorce/libical-2.0.0/src/libicalvcal/vcaltmp.h D:/Download/MinGW-64-souorce/libical-2.0.0/src/libicalvcal/vcc.c D:/Download/MinGW-64-souorce/libical-2.0.0/src/libicalvcal/vcc.h D:/Download/MinGW-64-souorce/libical-2.0.0/src/libicalvcal/vobject.c D:/Download/MinGW-64-souorce/libical-2.0.0/src/libicalvcal/vobject.h D:/Download/MinGW-64-souorce/libical-2.0.0/doc/Mainpage.dox
+FILE_PATTERNS          = *.cpp \
+                         *.c \
+                         *.cc \
+                         *.cxx \
+                         *.h \
+                         *.hh \
+                         *.hxx \
+                         *.hpp \
+                         *.dox
+RECURSIVE              = YES
+EXCLUDE                = D:/Download/MinGW-64-souorce/libical-2.0.0/src/java \
+			 D:/Download/MinGW-64-souorce/libical-2.0.0/src/php \
+			 D:/Download/MinGW-64-souorce/libical-2.0.0/src/python
+EXCLUDE_SYMLINKS       = NO
+EXCLUDE_PATTERNS       = */.svn/* \
+                         */.git/* \
+                         */cmake/* \
+                         *.moc.* \
+                         moc* \
+                         *.all_cpp.* \
+                         *unload.* \
+                         */test/* \
+                         */tests/* \
+                         *_p.cpp \
+                         *_export.h
+EXAMPLE_PATH           = 
+EXAMPLE_PATTERNS       = *
+EXAMPLE_RECURSIVE      = NO
+IMAGE_PATH             = D:/Download/MinGW-64-souorce/libical-2.0.0/docs
+INPUT_FILTER           = 
+FILTER_PATTERNS        = 
+FILTER_SOURCE_FILES    = NO
+#---------------------------------------------------------------------------
+# configuration options related to the alphabetical class index
+#---------------------------------------------------------------------------
+ALPHABETICAL_INDEX     = YES
+COLS_IN_ALPHA_INDEX    = 5
+IGNORE_PREFIX          = 
+#---------------------------------------------------------------------------
+# do NOT generate any formats other than html
+#---------------------------------------------------------------------------
+SOURCE_BROWSER         = NO
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+GENERATE_RTF           = NO
+GENERATE_XML           = NO
+GENERATE_AUTOGEN_DEF   = NO
+GENERATE_PERLMOD       = NO
+DISABLE_INDEX          = NO
+#---------------------------------------------------------------------------
+# configuration options related to the HTML output
+#---------------------------------------------------------------------------
+GENERATE_HTML          = YES
+HTML_OUTPUT            = html
+HTML_FILE_EXTENSION    = .html
+HTML_HEADER            =
+HTML_FOOTER            =
+HTML_STYLESHEET        =
+GENERATE_HTMLHELP      = NO
+CHM_FILE               =
+HHC_LOCATION           =
+GENERATE_CHI           = NO
+BINARY_TOC             = NO
+TOC_EXPAND             = NO
+DISABLE_INDEX          = NO
+ENUM_VALUES_PER_LINE   = 4
+GENERATE_TREEVIEW      = NO
+TREEVIEW_WIDTH         = 250
+#---------------------------------------------------------------------------
+# Configuration options related to the preprocessor   
+#---------------------------------------------------------------------------
+ENABLE_PREPROCESSING   = YES
+MACRO_EXPANSION        = YES
+EXPAND_ONLY_PREDEF     = NO
+SEARCH_INCLUDES        = YES
+INCLUDE_PATH           = 
+INCLUDE_FILE_PATTERNS  = 
+PREDEFINED             = Q_DECL_IMPORT=""
+EXPAND_AS_DEFINED      = 
+SKIP_FUNCTION_MACROS   = YES
+#---------------------------------------------------------------------------
+# Configuration::additions related to external references   
+#---------------------------------------------------------------------------
+ALLEXTERNALS           = NO
+EXTERNAL_GROUPS        = YES
+PERL_PATH              = /usr/bin/perl
+#---------------------------------------------------------------------------
+# Configuration options related to the dot tool
+#---------------------------------------------------------------------------
+CLASS_DIAGRAMS         = YES
+HIDE_UNDOC_RELATIONS   = YES
+HAVE_DOT               = YES
+CLASS_GRAPH            = YES
+COLLABORATION_GRAPH    = NO
+GROUP_GRAPHS           = NO
+UML_LOOK               = NO
+TEMPLATE_RELATIONS     = NO
+INCLUDE_GRAPH          = NO
+INCLUDED_BY_GRAPH      = NO
+CALL_GRAPH             = NO
+CALLER_GRAPH           = NO
+GRAPHICAL_HIERARCHY    = YES
+DIRECTORY_GRAPH        = YES
+DOT_IMAGE_FORMAT       = png
+DOT_PATH               =
+DOTFILE_DIRS           =
+MAX_DOT_GRAPH_DEPTH    = 1000
+DOT_TRANSPARENT        = NO
+DOT_MULTI_TARGETS      = NO
+GENERATE_LEGEND        = YES
+DOT_CLEANUP            = YES
+#---------------------------------------------------------------------------
+# Configuration::additions related to the search engine   
+#---------------------------------------------------------------------------
+SEARCHENGINE           = YES
+SERVER_BASED_SEARCH    = NO

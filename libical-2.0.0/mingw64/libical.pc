@@ -1,0 +1,12 @@
+prefix=/MSYS2/mingw64
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+threadslib=
+iculib=D:/MSYS2/mingw64/lib/libicuuc.dll.a D:/MSYS2/mingw64/lib/libicuin.dll.a 
+
+Name: libical
+Description: An implementation of basic iCAL protocols
+Version: 2.0
+Libs: -L${libdir} -lical -licalss -licalvcal ${threadslib} ${iculib}
+Cflags: -I${includedir}

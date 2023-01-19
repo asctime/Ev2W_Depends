@@ -1,0 +1,30 @@
+diff -urEbwB libpst-0.6.63/src/readpst.c libpst-0.6.63/src/readpst.c
+--- libpst-0.6.63/src/readpst.c	2013-12-27 17:44:13.000000000 +0100
++++ libpst-0.6.63/src/readpst.c	2014-02-25 15:24:10.293731326 +0100
+@@ -609,7 +609,7 @@
+     child_processes = (pid_t *)pst_malloc(sizeof(pid_t) * max_children);
+     memset(child_processes, 0, sizeof(pid_t) * max_children);
+ 
+-#ifdef HAVE_SEMAPHORE_H
++#if defined(HAVE_SEMAPHORE_H) && !defined(_WIN32)
+     if (max_children) {
+         shared_memory_id = shmget(IPC_PRIVATE, sizeof(sem_t)*2, 0777);
+         if (shared_memory_id >= 0) {
+@@ -629,7 +629,7 @@
+         // force a log file
+         if (!d_log) d_log = "readpst.log";
+     #endif // defined DEBUG_ALL
+-    #ifdef HAVE_SEMAPHORE_H
++    #if defined(HAVE_SEMAPHORE_H) && !defined(_WIN32)
+         DEBUG_INIT(d_log, output_mutex);
+     #else
+         DEBUG_INIT(d_log, NULL);
+@@ -685,7 +685,7 @@
+     pst_close(&pstfile);
+     DEBUG_RET();
+ 
+-#ifdef HAVE_SEMAPHORE_H
++#if defined(HAVE_SEMAPHORE_H) && !defined(_WIN32)
+     if (global_children) {
+         sem_destroy(global_children);
+         sem_destroy(output_mutex);

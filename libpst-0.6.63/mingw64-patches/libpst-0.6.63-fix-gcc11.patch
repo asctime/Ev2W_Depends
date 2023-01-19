@@ -1,0 +1,20 @@
+--- libpst-0.6.63/src/pst2ldif.cpp.orig	2022-07-03 11:18:24.853321601 +0200
++++ libpst-0.6.63/src/pst2ldif.cpp	2022-07-03 11:22:34.806632039 +0200
+@@ -8,8 +8,6 @@
+ 
+ */
+ 
+-using namespace std;
+-
+ // needed for std c++ collections
+ #include <set>
+ #include <vector>
+@@ -20,6 +18,8 @@
+     #include "lzfu.h"
+ }
+ 
++using namespace std;
++
+ void       usage(void);
+ void       version(void);
+ char       *check_filename(char *fname);

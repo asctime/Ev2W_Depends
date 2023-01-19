@@ -1,0 +1,31 @@
+GConf Editor Manual V2.0.2
+
+------------------------
+SUMMARY OF CHANGES
+------------------------
+
+Created by: Eugene O'Connor
+Date: 19 January 2004
+Manual version: 2.0.1
+
+Updated by: Breda McColgan
+Date: June 2004
+Manual version: 2.0.2
+Summary of changes:
+* Updated menu path in Getting Started section.
+
+
+
+------------------------
+SCREENSHOT INSTRUCTIONS
+------------------------
+
+gconf_editor_anno_window
+1. Start Configuration Editor.
+2. Display the key /system/http_proxy/use_http_proxy in the GConf editor window. 
+3. Adjust the width of the panes to make the window as small as possible.
+4. Ensure that the window has focus. If it does not, click on the window to give it focus.
+5. Take a screenshot of the window. 
+6. In your image editor, paste the screenshot into the appropriate location in file gconf_editor_anno_window.xcf.
+7. In your image editor, add the translations to the XCF file.
+8. In your image editor, save the file in the appropriate formats.
