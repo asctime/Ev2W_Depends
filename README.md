@@ -10,7 +10,7 @@ This can be any TCPv4 port you want, AFAIK.<br>
 
 <strong>GCONF Configurations for Windows</strong><br>
 1. Make-install GCONF <u>after</u> DBUS is installed, configured and running.
-2. Once GCONF2 is compiled and installed, edit /MSYS2/mingw64/etc/gconf/2/path:<code>
+2. Once GCONF2 is compiled and installed, edit "/MSYS2/mingw64/etc/gconf/2/path":<code>
 
 &num; This file stores the addresses of config sources for GConf
 &num; When a value is stored or requested, the sources are scanned from top to 
