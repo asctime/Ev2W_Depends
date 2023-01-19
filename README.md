@@ -2,7 +2,7 @@
 <strong>Evolution for Windows dependency libraries (MinGW64 x64)</strong><br><br>
 <strong>DBUS Configurations for Windows</strong><br>
 1. Set a GLOBAL SYSTEM VARIABLE for the TCP Address, such as:<br>
-DBUS_SESSION_BUS_ADDRESS=tcp:host=localhost,bind=*,port=33445,family=ipv4
+DBUS_SESSION_BUS_ADDRESS=tcp:host=localhost,bind=*,port=33445,family=ipv4<br>
 This can be any TCPv4 port you want, AFAIK.<br>
 2. start (or autostart) the DBUS server executable. There are two options:<br>
 "dbus-launch.exe" hides it in the background like a pseudo-service<br>
