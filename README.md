@@ -1,4 +1,4 @@
-# Evo2W-Depends
+# Ev2W-Depends
 <strong>Evolution for Windows dependency libraries (MinGW64 x64) (test with include gconf-editor.exe)</strong><br><br>
 <strong>DBUS Configurations for Windows</strong><br>
 1. Set a GLOBAL SYSTEM VARIABLE for the TCP Address, such as:<br>
