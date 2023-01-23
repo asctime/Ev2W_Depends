@@ -1,5 +1,5 @@
 # Ev2W-Depends
-<strong><a href="//github.com/asctime/Ev2W">Evolution for Windows</a> dependency libraries (MinGW64 x64) (test with include gconf-editor.exe)</strong><br><br>
+<strong><a href="//github.com/asctime/Ev2W">Evolution for Windows</a> dependency libraries (MinGW64 x64) (test with included "gconf-editor" sources)</strong><br><br>
 <strong>DBUS Configurations for Windows</strong><br>
 1. Set a GLOBAL SYSTEM VARIABLE for the TCP Address, such as:<br>
 DBUS_SESSION_BUS_ADDRESS=tcp:host=localhost,bind=*,port=33445,family=ipv4<br>
