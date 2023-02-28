@@ -623,7 +623,11 @@ load_subdirs (MarkupDir *dir)
 {  
   GDir* dp;
   const char* dent;
+#ifdef __MINGW64__
+  struct _stat64 statbuf;
+#else
   struct stat statbuf;
+#endif
   gchar* fullpath;
   gchar* fullpath_end;
   guint len;

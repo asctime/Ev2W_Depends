@@ -29,6 +29,9 @@
 #include <libxml/parser.h>
 #include <libxml/xpath.h>
 #include <glib.h>
+#ifdef __MINGW32__
+#include <winsock2.h>       /* win32 gethostname */
+#endif
 
 #include "gconf/gconf.h"
 #include "gconf/gconf-backend.h"

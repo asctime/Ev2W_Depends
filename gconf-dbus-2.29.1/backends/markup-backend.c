@@ -252,7 +252,11 @@ resolve_address (const char *address,
                  GError    **err)
 {
   char* root_dir;
+#ifdef __MINGW64__
+  struct _stat64 statbuf;
+#else
   struct stat statbuf;
+#endif
   MarkupSource* xsource;
   GConfSource *source;
   gint flags = 0;

@@ -312,7 +312,11 @@ get_lock_dir_from_root_dir (const char *root_dir)
 static GConfSource*  
 resolve_address (const gchar* address, GError** err)
 {
+#ifdef __MINGW64__
+  struct _stat64 statbuf;
+#else
   struct stat statbuf;
+#endif
   gchar* root_dir;
   XMLSource* xsource;
   GConfSource* source;

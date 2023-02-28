@@ -238,9 +238,9 @@ if test "x$with_openldap" != "xno"; then
     CFLAGS="$SAVE_CFLAGS"
     LIBS="$SAVE_LIBS"
 
-  else # Win32
+  else # Win32 we made the assumption that this is mingw earlier. 
     LDAP_CFLAGS="-DLDAP_DEPRECATED"
-    LDAP_LIBS="-lwldap32"
+    LDAP_LIBS="-lldap -llber"
     AC_SUBST(LDAP_CFLAGS)
     AC_SUBST(LDAP_LIBS)
     AC_DEFINE(HAVE_LDAP,1,[Define if you have LDAP support])

@@ -159,7 +159,11 @@ dir_load (const gchar* key, const gchar* xml_root_dir, GError** err)
   xml_filename = g_strconcat(fs_dirname, "/%gconf.xml", NULL);
 
   {
+#ifdef __MINGW64__
+    struct _stat64 s;
+#else
     struct stat s;
+#endif
     gboolean notfound = FALSE;
     
     if (g_stat(xml_filename, &s) != 0)
@@ -835,7 +839,11 @@ dir_rescan_subdirs (Dir* d, GError** err)
 {
   GDir* dp;
   const char* dent;
+#ifdef __MINGW64__
+  struct _stat64 statbuf;
+#else
   struct stat statbuf;
+#endif
   GSList* retval = NULL;
   gchar* fullpath;
   gchar* fullpath_end;

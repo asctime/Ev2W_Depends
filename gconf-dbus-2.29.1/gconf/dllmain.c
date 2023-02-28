@@ -115,11 +115,19 @@ setup (void)
 
   if (cp_prefix != NULL)
     {
+#ifdef __MINGW64__  /* this is actually incorrect in gcc-64 */
+      gchar *p = strrchr (cp_prefix, '\\');
+#else
       gchar *p = _mbsrchr (cp_prefix, '\\');
+#endif
       if (p != NULL)
 	*p = '\0';
       
+#ifdef __MINGW64__  /* this is actually incorrect in gcc-64 */
+      p = strrchr (cp_prefix, '\\');
+#else
       p = _mbsrchr (cp_prefix, '\\');
+#endif
       if (p && (g_ascii_strcasecmp (p + 1, "bin") == 0))
 	*p = '\0';
     }

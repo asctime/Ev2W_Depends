@@ -42,7 +42,11 @@ _gconf_mode_t_to_mode (mode_t orig)
 static gboolean
 merge_tree (const char *root_dir)
 {
+#ifdef __MINGW64__
+  struct _stat64 statbuf;
+#else
   struct stat statbuf;
+#endif
   guint dir_mode;
   guint file_mode;
   MarkupTree *tree;
