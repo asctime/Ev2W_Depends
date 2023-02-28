@@ -1,0 +1,14 @@
+--- a/configure.ac.orig	2010-05-08 18:12:23.719940094 +0200
++++ b/configure.ac	2010-05-08 18:12:31.539933149 +0200
+@@ -192,11 +192,6 @@
+ AM_CONDITIONAL(HAVE_NEWSOUP, test x$HAVE_NEWSOUP != xno)
+ 
+ dnl **************************************************
+-dnl Gnome Icon Theme
+-dnl **************************************************
+-PKG_CHECK_MODULES(GIT, gnome-icon-theme >= gnome_icon_theme_minimum_version)
+-
+-dnl **************************************************
+ dnl iso-codes
+ dnl **************************************************
+ AC_MSG_CHECKING([for iso-codes package])

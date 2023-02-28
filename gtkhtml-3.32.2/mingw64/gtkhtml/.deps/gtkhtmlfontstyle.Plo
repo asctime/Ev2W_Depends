@@ -1,0 +1,7 @@
+gtkhtmlfontstyle.lo : \
+ ../../gtkhtml/gtkhtmlfontstyle.c ../config.h \
+ ../../gtkhtml/gtkhtmlfontstyle.h ../../gtkhtml/gtkhtml-enums.h
+../../gtkhtml/gtkhtmlfontstyle.c :
+../config.h :
+../../gtkhtml/gtkhtmlfontstyle.h :
+../../gtkhtml/gtkhtml-enums.h :

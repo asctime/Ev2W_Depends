@@ -1,0 +1,13 @@
+prefix=/MSYS2/mingw64
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+gtkhtml_datadir=${prefix}/share/gtkhtml-3.14
+gtkhtml_apiversion=3.14
+
+Name: libgtkhtml
+Description: libgtkhtml
+Requires: gtk+-2.0 >= 2.20.0 enchant >= 1.1.7
+Version: 3.32.2
+Libs: -L${libdir} -lgtkhtml-3.14
+Cflags: -I${includedir}/libgtkhtml-3.14

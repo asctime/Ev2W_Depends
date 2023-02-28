@@ -1,0 +1,222 @@
+diff --git a/configure.ac b/configure.ac
+index 2e28dbe..5d2f5a9 100644
+diff --git a/gtkhtml/Makefile.am b/gtkhtml/Makefile.am
+index 6ac2d02..9e781c0 100644
+--- a/gtkhtml/Makefile.am
++++ b/gtkhtml/Makefile.am
+@@ -12,6 +12,10 @@ if HAVE_NEWSOUP
+ have_new_soup = -DHAVE_NEWSOUP
+ endif
+ 
++if HAVE_GCONF
++have_gconf = -DHAVE_GCONF
++endif
++
+ AM_CPPFLAGS = 				\
+ 	-I$(top_srcdir)			\
+ 	-I$(srcdir)			\
+@@ -19,6 +23,7 @@ AM_CPPFLAGS = 				\
+ 	$(SOUP_CFLAGS)			\
+ 	$(I18N_LIB_CFLAGS)		\
+ 	-DG_LOG_DOMAIN=\"gtkhtml\"	\
++	${have_gconf}			\
+ 	${have_new_soup}
+ 
+ AM_CFLAGS = 						\
+diff --git a/gtkhtml/gtkhtml-properties.h b/gtkhtml/gtkhtml-properties.h
+index ebfacf2..6eed7d7 100644
+--- a/gtkhtml/gtkhtml-properties.h
++++ b/gtkhtml/gtkhtml-properties.h
+@@ -27,7 +27,11 @@
+ #define GTK_HTML_GNOME_CONFIG_PREFIX "/gtkhtml/Settings/"
+ 
+ #include <gtk/gtk.h>
++#ifdef HAVE_GCONF
+ #include <gconf/gconf-client.h>
++#else
++typedef void* GConfClient;
++#endif
+ 
+ #include "gtkhtml-types.h"
+ #include "gtkhtml.h"
+diff --git a/gtkhtml/gtkhtml.c b/gtkhtml/gtkhtml.c
+index 6aa0cef..7ed2d0d 100644
+--- a/gtkhtml/gtkhtml.c
++++ b/gtkhtml/gtkhtml.c
+@@ -794,9 +794,11 @@
+ 		}
+ 
+ 		if (html->priv->notify_monospace_font_id) {
++#ifdef HAVE_GCONF
+ 			gconf_client_notify_remove (
+ 				gconf_client_get_default (),
+ 				html->priv->notify_monospace_font_id);
++#endif
+ 			html->priv->notify_monospace_font_id = 0;
+ 		}
+ 
+@@ -832,13 +836,19 @@ gtk_html_get_top_html (GtkHTML *html)
+ static cairo_font_options_t *
+ get_font_options (void)
+ {
+-	gchar *antialiasing, *hinting, *subpixel_order;
++	gchar *antialiasing = NULL;
++	gchar *hinting = NULL;
++	gchar  *subpixel_order = NULL;
++#ifdef HAVE_GCONF
+ 	GConfClient *gconf = gconf_client_get_default ();
++#endif
+ 	cairo_font_options_t *font_options = cairo_font_options_create ();
+ 
+ 	/* Antialiasing */
++#ifdef HAVE_GCONF
+ 	antialiasing = gconf_client_get_string (gconf,
+ 			"/desktop/gnome/font_rendering/antialiasing", NULL);
++#endif
+ 	if (antialiasing == NULL) {
+ 		cairo_font_options_set_antialias (font_options, CAIRO_ANTIALIAS_DEFAULT);
+ 	} else {
+@@ -851,8 +861,10 @@ get_font_options (void)
+ 		else
+ 			cairo_font_options_set_antialias (font_options, CAIRO_ANTIALIAS_DEFAULT);
+ 	}
++#ifdef HAVE_GCONF
+ 	hinting = gconf_client_get_string (gconf,
+ 			"/desktop/gnome/font_rendering/hinting", NULL);
++#endif
+ 	if (hinting == NULL) {
+ 		cairo_font_options_set_hint_style (font_options, CAIRO_HINT_STYLE_DEFAULT);
+ 	} else {
+@@ -867,8 +879,10 @@ get_font_options (void)
+ 		else
+ 			cairo_font_options_set_hint_style (font_options, CAIRO_HINT_STYLE_DEFAULT);
+ 	}
++#ifdef HAVE_GCONF
+ 	subpixel_order = gconf_client_get_string (gconf,
+ 			"/desktop/gnome/font_rendering/rgba_order", NULL);
++#endif
+ 	if (subpixel_order == NULL) {
+ 		cairo_font_options_set_subpixel_order (font_options, CAIRO_SUBPIXEL_ORDER_DEFAULT);
+ 	} else {
+@@ -886,7 +900,9 @@ get_font_options (void)
+ 	g_free (antialiasing);
+ 	g_free (hinting);
+ 	g_free (subpixel_order);
++#ifdef HAVE_GCONF
+ 	g_object_unref (gconf);
++#endif
+ 	return font_options;
+ }
+ 
+@@ -925,6 +941,7 @@ gtk_html_set_fonts (GtkHTML *html, HTMLPainter *painter)
+ 		}
+ 	}
+ 
++#ifdef HAVE_GCONF
+ 	if (!fixed_name) {
+ 		GConfClient *gconf;
+ 
+@@ -943,6 +960,7 @@ gtk_html_set_fonts (GtkHTML *html, HTMLPainter *painter)
+ 		}
+ 		g_object_unref (gconf);
+ 	}
++#endif
+ 
+ 	if (!fixed_name) {
+ 		fixed_family = "Monospace";
+@@ -2751,13 +2771,16 @@ drag_motion (GtkWidget *widget, GdkDragContext *context, gint x, gint y, guint t
+ static void
+ read_key_theme (GtkHTMLClass *html_class)
+ {
+-	gchar *key_theme;
++	gchar *key_theme = NULL;
+ 
++#ifdef HAVE_GCONF
+ 	key_theme = gconf_client_get_string (gconf_client_get_default (), "/desktop/gnome/interface/gtk_key_theme", NULL);
++#endif
+ 	html_class->use_emacs_bindings = key_theme && !strcmp (key_theme, "Emacs");
+ 	g_free (key_theme);
+ }
+ 
++#ifdef HAVE_GCONF
+ static void
+ client_notify_key_theme (GConfClient* client, guint cnxn_id, GConfEntry* entry, gpointer data)
+ {
+@@ -2783,6 +2806,7 @@ client_notify_cursor_blink (GConfClient* client, guint cnxn_id, GConfEntry* entr
+ 	else
+ 		html_engine_set_cursor_blink_timeout (0);
+ }
++#endif
+ 
+ static void
+ gtk_html_direction_changed (GtkWidget *widget, GtkTextDirection previous_dir)
+@@ -2823,7 +2847,9 @@ gtk_html_class_init (GtkHTMLClass *klass)
+ 	GtkLayoutClass    *layout_class;
+ 	GtkContainerClass *container_class;
+ 	gchar *filename;
++#ifdef HAVE_GCONF
+ 	GConfClient *client;
++#endif
+ 
+ 	html_class = (GtkHTMLClass *) klass;
+ #ifdef USE_PROPS
+@@ -3178,6 +3204,7 @@ gtk_html_class_init (GtkHTMLClass *klass)
+ 	html_class->emacs_bindings = gtk_binding_set_find ("gtkhtml-bindings-emacs");
+ 	read_key_theme (html_class);
+ 
++#ifdef HAVE_GCONF
+ 	client = gconf_client_get_default ();
+ 
+ 	gconf_client_notify_add (client, "/desktop/gnome/interface/gtk_key_theme",
+@@ -3207,6 +3207,7 @@
+ 	client_notify_cursor_blink (client, 0, NULL, NULL);
+ 
+ 	g_object_unref (client);
++#endif
+ }
+ 
+ void
+@@ -3478,9 +3508,11 @@ gtk_html_init (GtkHTML* html)
+ 	g_signal_connect (G_OBJECT (html->priv->im_context), "delete_surrounding",
+ 			  G_CALLBACK (gtk_html_im_delete_surrounding_cb), html);
+ 
++#ifdef HAVE_GCONF
+ 	html->priv->notify_monospace_font_id =
+ 		gconf_client_notify_add (gconf_client_get_default (), "/desktop/gnome/interface/monospace_font_name",
+ 					 client_notify_monospace_font, html, NULL, &gconf_error);
++#endif
+ 
+ 	gtk_html_construct (html);
+ }
+@@ -6042,7 +6074,11 @@ gtk_html_edit_make_cursor_visible (GtkHTML *html)
+ gboolean
+ gtk_html_build_with_gconf (void)
+ {
++#ifdef HAVE_GCONF
+ 	return TRUE;
++#else
++	return FALSE;
++#endif
+ }
+ 
+ static void
+--- a/configure.ac.orig	2010-08-30 06:25:50.000000000 +0200
++++ b/configure.ac	2010-09-24 13:00:40.323990120 +0200
+@@ -174,11 +174,16 @@
+ dnl **********************************
+ dnl GTKHTML modules
+ dnl **********************************
+-GTKHTML_MODULES="$GTK_PACKAGE >= $gtk_minimum_version enchant >= enchant_minimum_version gconf-2.0 iso-codes"
++GTKHTML_MODULES="$GTK_PACKAGE >= $gtk_minimum_version enchant >= enchant_minimum_version iso-codes"
++PKG_CHECK_MODULES(GCONF, gconf-2.0, have_gconf=yes, have_gconf=no)
++if test "$have_gconf" = "true" ; then
++	GTKHTML_MODULES="$GTKHTML_MODULES gconf-2.0"
++fi
+ PKG_CHECK_MODULES(GTKHTML, $GTKHTML_MODULES)
+ AC_SUBST(GTKHTML_CFLAGS)
+ AC_SUBST(GTKHTML_LIBS)
+ AC_SUBST(GTKHTML_MODULES)
++AM_CONDITIONAL(HAVE_GCONF, test x$have_gconf != xno)
+ 
+ dnl **********************************
+ dnl Glade catalog files

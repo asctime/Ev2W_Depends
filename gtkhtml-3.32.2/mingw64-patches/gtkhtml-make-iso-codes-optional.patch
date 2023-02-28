@@ -1,0 +1,11 @@
+--- a/configure.ac.orig	2010-05-08 18:13:14.000000000 +0200
++++ b/configure.ac	2010-05-08 18:14:05.606880865 +0200
+@@ -174,7 +174,7 @@
+ dnl **********************************
+ dnl GTKHTML modules
+ dnl **********************************
+-GTKHTML_MODULES="$GTK_PACKAGE >= $gtk_minimum_version enchant >= enchant_minimum_version iso-codes"
++GTKHTML_MODULES="$GTK_PACKAGE >= $gtk_minimum_version enchant >= enchant_minimum_version"
+ PKG_CHECK_MODULES(GCONF, gconf-2.0, have_gconf=yes, have_gconf=no)
+ if test "$have_gconf" = "true" ; then
+ 	GTKHTML_MODULES="$GTKHTML_MODULES gconf-2.0"

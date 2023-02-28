@@ -1,0 +1,20 @@
+--- gtkhtml/dllmain.c.orig	2009-07-03 06:46:11.000000000 +0200
++++ gtkhtml/dllmain.c	2009-09-24 19:12:41.653533555 +0200
+@@ -84,6 +84,8 @@
+ #undef DATADIR
+ #include <windows.h>
+ 
++#ifndef GLIB_STATIC_COMPILATION
++
+ /* Silence gcc with a prototype */
+ BOOL WINAPI DllMain (HINSTANCE hinstDLL,
+ 		     DWORD     fdwReason,
+@@ -103,6 +105,8 @@
+         return TRUE;
+ }
+ 
++#endif
++
+ /* Include gtkhtml-private.h now to get prototypes for the getter
+  * functions, to silence gcc. Can't include it earlier as we need the
+  * definitions of the *DIR macros from the Makefile above, and

@@ -1,0 +1,6 @@
+prefix=/MSYS2/mingw64
+
+Name: gsettings-desktop-schemas
+Description: Shared GSettings schemas for the desktop, including helper headers
+Version: 0.1.7
+Cflags: -I${prefix}/include/gsettings-desktop-schemas
