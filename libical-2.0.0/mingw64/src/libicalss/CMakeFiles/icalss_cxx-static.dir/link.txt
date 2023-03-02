@@ -1,0 +1,2 @@
+D:/MSYS2/mingw64/bin/ar.exe qc ../../bin/libicalss_cxx.a CMakeFiles/icalss_cxx-static.dir/icalspanlist_cxx.cpp.obj
+D:/MSYS2/mingw64/bin/ranlib.exe ../../bin/libicalss_cxx.a

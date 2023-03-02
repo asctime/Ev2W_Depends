@@ -1,0 +1,42 @@
+file(REMOVE_RECURSE
+  "../../bin/libical.a"
+  "../../bin/libical.pdb"
+  "CMakeFiles/ical-static.dir/caldate.c.obj"
+  "CMakeFiles/ical-static.dir/icalarray.c.obj"
+  "CMakeFiles/ical-static.dir/icalattach.c.obj"
+  "CMakeFiles/ical-static.dir/icalcomponent.c.obj"
+  "CMakeFiles/ical-static.dir/icalderivedparameter.c.obj"
+  "CMakeFiles/ical-static.dir/icalderivedproperty.c.obj"
+  "CMakeFiles/ical-static.dir/icalderivedvalue.c.obj"
+  "CMakeFiles/ical-static.dir/icalduration.c.obj"
+  "CMakeFiles/ical-static.dir/icalenums.c.obj"
+  "CMakeFiles/ical-static.dir/icalerror.c.obj"
+  "CMakeFiles/ical-static.dir/icallangbind.c.obj"
+  "CMakeFiles/ical-static.dir/icalmemory.c.obj"
+  "CMakeFiles/ical-static.dir/icalmime.c.obj"
+  "CMakeFiles/ical-static.dir/icalparameter.c.obj"
+  "CMakeFiles/ical-static.dir/icalparser.c.obj"
+  "CMakeFiles/ical-static.dir/icalperiod.c.obj"
+  "CMakeFiles/ical-static.dir/icalproperty.c.obj"
+  "CMakeFiles/ical-static.dir/icalrecur.c.obj"
+  "CMakeFiles/ical-static.dir/icalrestriction.c.obj"
+  "CMakeFiles/ical-static.dir/icaltime.c.obj"
+  "CMakeFiles/ical-static.dir/icaltimezone.c.obj"
+  "CMakeFiles/ical-static.dir/icaltypes.c.obj"
+  "CMakeFiles/ical-static.dir/icaltz-util.c.obj"
+  "CMakeFiles/ical-static.dir/icalvalue.c.obj"
+  "CMakeFiles/ical-static.dir/pvl.c.obj"
+  "CMakeFiles/ical-static.dir/sspm.c.obj"
+  "icalderivedparameter.c"
+  "icalderivedparameter.h"
+  "icalderivedproperty.c"
+  "icalderivedproperty.h"
+  "icalderivedvalue.c"
+  "icalderivedvalue.h"
+  "icalrestriction.c"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/ical-static.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

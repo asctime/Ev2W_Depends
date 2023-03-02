@@ -1,0 +1,2 @@
+D:/MSYS2/mingw64/bin/ar.exe qc ../../bin/libicalvcal.a CMakeFiles/icalvcal-static.dir/icalvcal.c.obj CMakeFiles/icalvcal-static.dir/vobject.c.obj CMakeFiles/icalvcal-static.dir/vcaltmp.c.obj CMakeFiles/icalvcal-static.dir/vcc.c.obj
+D:/MSYS2/mingw64/bin/ranlib.exe ../../bin/libicalvcal.a

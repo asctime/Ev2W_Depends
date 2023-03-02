@@ -1,0 +1,25 @@
+-fasynchronous-unwind-tables: \
+ D:/Download/MinGW-64-souorce/libical-2.0.0/examples/errors.c \
+ D:/Download/MinGW-64-souorce/libical-2.0.0/mingw64/src/libical/ical.h \
+ D:/Download/MinGW-64-souorce/libical-2.0.0/src/libical/libical_ical_export.h \
+ D:/MSYS2/mingw64/x86_64-w64-mingw32/include/time.h \
+ D:/MSYS2/mingw64/x86_64-w64-mingw32/include/crtdefs.h \
+ D:/MSYS2/mingw64/x86_64-w64-mingw32/include/corecrt.h \
+ D:/MSYS2/mingw64/x86_64-w64-mingw32/include/_mingw.h \
+ D:/MSYS2/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
+ D:/MSYS2/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h \
+ D:/MSYS2/mingw64/x86_64-w64-mingw32/include/vadefs.h \
+ D:/MSYS2/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_directx.h \
+ D:/MSYS2/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+ D:/MSYS2/mingw64/x86_64-w64-mingw32/include/_timeval.h \
+ D:/MSYS2/mingw64/x86_64-w64-mingw32/include/sys/timeb.h \
+ D:/MSYS2/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
+ D:/MSYS2/mingw64/include/pthread_time.h \
+ D:/MSYS2/mingw64/lib/gcc/x86_64-w64-mingw32/8.3.0/include/stdarg.h \
+ D:/MSYS2/mingw64/x86_64-w64-mingw32/include/stdarg.h \
+ D:/MSYS2/mingw64/x86_64-w64-mingw32/include/_mingw_stdarg.h \
+ D:/MSYS2/mingw64/x86_64-w64-mingw32/include/stdio.h \
+ D:/MSYS2/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
+ D:/MSYS2/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
+ D:/MSYS2/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+ D:/MSYS2/mingw64/x86_64-w64-mingw32/include/assert.h

@@ -45,7 +45,7 @@ CMAKE_CXX_COMPILER_AR:FILEPATH=D:/MSYS2/mingw64/bin/gcc-ar.exe
 CMAKE_CXX_COMPILER_RANLIB:FILEPATH=D:/MSYS2/mingw64/bin/gcc-ranlib.exe
 
 //Flags used by the CXX compiler during all build types.
-CMAKE_CXX_FLAGS:STRING=-std=c++14 -Wa,-mbig-obj -D_MT -D_WIN64 -D_WIN32 -DWIN32 -Wno-deprecated-declarations -D_WIN32_WINNT=_WIN32_WINNT_WIN7 -D_DLL -D__USE_MINGW_ANSI_STDIO=1 -march=x86-64 -mtune=sandybridge -O2 -pipe -mfpmath=sse
+CMAKE_CXX_FLAGS:STRING=-D__USE_MINGW_ANSI_STDIO=1 -D_POSIX_C_SOURCE -D_FORTIFY_SOURCE=2 -Wno-deprecated -Wno-deprecated-declarations -DGLIB_DISABLE_DEPRECATION_WARNINGS -O2 -mms-bitfields -pipe -fomit-frame-pointer -mtune=sandybridge -DWIN32 -DWIN64 -D_WIN32_WINNT=0x0501 -DWINVER=0x0501 -MD -MT -fstack-protector-strong -D_FORTIFY_SOURCE=2 -fasynchronous-unwind-tables -fexceptions
 
 //Flags used by the CXX compiler during DEBUG builds.
 CMAKE_CXX_FLAGS_DEBUG:STRING=-g
@@ -74,7 +74,7 @@ CMAKE_C_COMPILER_AR:FILEPATH=D:/MSYS2/mingw64/bin/gcc-ar.exe
 CMAKE_C_COMPILER_RANLIB:FILEPATH=D:/MSYS2/mingw64/bin/gcc-ranlib.exe
 
 //Flags used by the C compiler during all build types.
-CMAKE_C_FLAGS:STRING=-Wa,-mbig-obj -D_MT -D_WIN64 -D_WIN32 -DWIN32 -Wno-deprecated-declarations -D_WIN32_WINNT=_WIN32_WINNT_WIN7 -D_DLL -D__USE_MINGW_ANSI_STDIO=1 -march=x86-64 -mtune=sandybridge -O2 -pipe -mfpmath=sse
+CMAKE_C_FLAGS:STRING=-D__USE_MINGW_ANSI_STDIO=1 -D_POSIX_C_SOURCE -Wno-deprecated -Wno-deprecated-declarations -DGLIB_DISABLE_DEPRECATION_WARNINGS -O2 -mms-bitfields -pipe -mtune=sandybridge -fomit-frame-pointer -DWIN32 -DWIN64 -D_WIN32_WINNT=0x0501 -DWINVER=0x0501 -D_FORTIFY_SOURCE=2 -fstack-protector-strong -MD -MT -fasynchronous-unwind-tables -fexceptions
 
 //Flags used by the C compiler during DEBUG builds.
 CMAKE_C_FLAGS_DEBUG:STRING=-g
@@ -233,7 +233,7 @@ CMAKE_READELF:FILEPATH=D:/MSYS2/mingw64/bin/readelf.exe
 
 //Flags used by the linker during the creation of shared libraries
 // during all build types.
-CMAKE_SHARED_LINKER_FLAGS:STRING=
+CMAKE_SHARED_LINKER_FLAGS:STRING= -lssp
 
 //Flags used by the linker during the creation of shared libraries
 // during DEBUG builds.

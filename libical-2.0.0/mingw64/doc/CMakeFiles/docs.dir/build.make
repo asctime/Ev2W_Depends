@@ -76,6 +76,9 @@ doc/CMakeFiles/docs: apidocs/html/index.html
 
 
 apidocs/html/index.html: src/libical/ical.h
+apidocs/html/index.html: src/libical/icalderivedparameter.h
+apidocs/html/index.html: src/libical/icalderivedproperty.h
+apidocs/html/index.html: src/libical/icalderivedvalue.h
 apidocs/html/index.html: src/libical/icalversion.h
 apidocs/html/index.html: src/libicalss/icalss.h
 apidocs/html/index.html: ../src/libical/astime.h

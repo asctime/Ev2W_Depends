@@ -1,17 +1,17 @@
 Determining if files endian.h exist failed with the following output:
 Change Dir: D:/Download/MinGW-64-souorce/libical-2.0.0/mingw64/CMakeFiles/CMakeTmp
 
-Run Build Command(s):D:/MSYS2/usr/bin/make.exe cmTC_bee37/fast && /usr/bin/make  -f CMakeFiles/cmTC_bee37.dir/build.make CMakeFiles/cmTC_bee37.dir/build
+Run Build Command(s):D:/MSYS2/usr/bin/make.exe cmTC_d6090/fast && /usr/bin/make  -f CMakeFiles/cmTC_d6090.dir/build.make CMakeFiles/cmTC_d6090.dir/build
 make[1]: Entering directory '/d/Download/MinGW-64-souorce/libical-2.0.0/mingw64/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_bee37.dir/HAVE_ENDIAN_H.c.obj
-/D/MSYS2/mingw64/bin/gcc.exe    -o CMakeFiles/cmTC_bee37.dir/HAVE_ENDIAN_H.c.obj -c /D/Download/MinGW-64-souorce/libical-2.0.0/mingw64/CMakeFiles/CheckIncludeFiles/HAVE_ENDIAN_H.c
+Building C object CMakeFiles/cmTC_d6090.dir/HAVE_ENDIAN_H.c.obj
+/D/MSYS2/mingw64/bin/gcc.exe    -o CMakeFiles/cmTC_d6090.dir/HAVE_ENDIAN_H.c.obj -c /D/Download/MinGW-64-souorce/libical-2.0.0/mingw64/CMakeFiles/CheckIncludeFiles/HAVE_ENDIAN_H.c
 D:/Download/MinGW-64-souorce/libical-2.0.0/mingw64/CMakeFiles/CheckIncludeFiles/HAVE_ENDIAN_H.c:2:10: fatal error: endian.h: No such file or directory
  #include <endian.h>
           ^~~~~~~~~~
 compilation terminated.
-make[1]: *** [CMakeFiles/cmTC_bee37.dir/build.make:85: CMakeFiles/cmTC_bee37.dir/HAVE_ENDIAN_H.c.obj] Error 1
+make[1]: *** [CMakeFiles/cmTC_d6090.dir/build.make:85: CMakeFiles/cmTC_d6090.dir/HAVE_ENDIAN_H.c.obj] Error 1
 make[1]: Leaving directory '/d/Download/MinGW-64-souorce/libical-2.0.0/mingw64/CMakeFiles/CMakeTmp'
-make: *** [Makefile:140: cmTC_bee37/fast] Error 2
+make: *** [Makefile:140: cmTC_d6090/fast] Error 2
 
 
 Source:
@@ -24,17 +24,17 @@ int main(void){return 0;}
 Determining if files sys/endian.h exist failed with the following output:
 Change Dir: D:/Download/MinGW-64-souorce/libical-2.0.0/mingw64/CMakeFiles/CMakeTmp
 
-Run Build Command(s):D:/MSYS2/usr/bin/make.exe cmTC_332d0/fast && /usr/bin/make  -f CMakeFiles/cmTC_332d0.dir/build.make CMakeFiles/cmTC_332d0.dir/build
+Run Build Command(s):D:/MSYS2/usr/bin/make.exe cmTC_03638/fast && /usr/bin/make  -f CMakeFiles/cmTC_03638.dir/build.make CMakeFiles/cmTC_03638.dir/build
 make[1]: Entering directory '/d/Download/MinGW-64-souorce/libical-2.0.0/mingw64/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_332d0.dir/HAVE_SYS_ENDIAN_H.c.obj
-/D/MSYS2/mingw64/bin/gcc.exe    -o CMakeFiles/cmTC_332d0.dir/HAVE_SYS_ENDIAN_H.c.obj -c /D/Download/MinGW-64-souorce/libical-2.0.0/mingw64/CMakeFiles/CheckIncludeFiles/HAVE_SYS_ENDIAN_H.c
+Building C object CMakeFiles/cmTC_03638.dir/HAVE_SYS_ENDIAN_H.c.obj
+/D/MSYS2/mingw64/bin/gcc.exe    -o CMakeFiles/cmTC_03638.dir/HAVE_SYS_ENDIAN_H.c.obj -c /D/Download/MinGW-64-souorce/libical-2.0.0/mingw64/CMakeFiles/CheckIncludeFiles/HAVE_SYS_ENDIAN_H.c
 D:/Download/MinGW-64-souorce/libical-2.0.0/mingw64/CMakeFiles/CheckIncludeFiles/HAVE_SYS_ENDIAN_H.c:2:10: fatal error: sys/endian.h: No such file or directory
  #include <sys/endian.h>
           ^~~~~~~~~~~~~~
 compilation terminated.
-make[1]: *** [CMakeFiles/cmTC_332d0.dir/build.make:85: CMakeFiles/cmTC_332d0.dir/HAVE_SYS_ENDIAN_H.c.obj] Error 1
+make[1]: *** [CMakeFiles/cmTC_03638.dir/build.make:85: CMakeFiles/cmTC_03638.dir/HAVE_SYS_ENDIAN_H.c.obj] Error 1
 make[1]: Leaving directory '/d/Download/MinGW-64-souorce/libical-2.0.0/mingw64/CMakeFiles/CMakeTmp'
-make: *** [Makefile:140: cmTC_332d0/fast] Error 2
+make: *** [Makefile:140: cmTC_03638/fast] Error 2
 
 
 Source:
@@ -47,17 +47,17 @@ int main(void){return 0;}
 Determining if files sys/utsname.h exist failed with the following output:
 Change Dir: D:/Download/MinGW-64-souorce/libical-2.0.0/mingw64/CMakeFiles/CMakeTmp
 
-Run Build Command(s):D:/MSYS2/usr/bin/make.exe cmTC_1cb8d/fast && /usr/bin/make  -f CMakeFiles/cmTC_1cb8d.dir/build.make CMakeFiles/cmTC_1cb8d.dir/build
+Run Build Command(s):D:/MSYS2/usr/bin/make.exe cmTC_d7d8e/fast && /usr/bin/make  -f CMakeFiles/cmTC_d7d8e.dir/build.make CMakeFiles/cmTC_d7d8e.dir/build
 make[1]: Entering directory '/d/Download/MinGW-64-souorce/libical-2.0.0/mingw64/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_1cb8d.dir/HAVE_SYS_UTSNAME_H.c.obj
-/D/MSYS2/mingw64/bin/gcc.exe    -o CMakeFiles/cmTC_1cb8d.dir/HAVE_SYS_UTSNAME_H.c.obj -c /D/Download/MinGW-64-souorce/libical-2.0.0/mingw64/CMakeFiles/CheckIncludeFiles/HAVE_SYS_UTSNAME_H.c
+Building C object CMakeFiles/cmTC_d7d8e.dir/HAVE_SYS_UTSNAME_H.c.obj
+/D/MSYS2/mingw64/bin/gcc.exe    -o CMakeFiles/cmTC_d7d8e.dir/HAVE_SYS_UTSNAME_H.c.obj -c /D/Download/MinGW-64-souorce/libical-2.0.0/mingw64/CMakeFiles/CheckIncludeFiles/HAVE_SYS_UTSNAME_H.c
 D:/Download/MinGW-64-souorce/libical-2.0.0/mingw64/CMakeFiles/CheckIncludeFiles/HAVE_SYS_UTSNAME_H.c:2:10: fatal error: sys/utsname.h: No such file or directory
  #include <sys/utsname.h>
           ^~~~~~~~~~~~~~~
 compilation terminated.
-make[1]: *** [CMakeFiles/cmTC_1cb8d.dir/build.make:85: CMakeFiles/cmTC_1cb8d.dir/HAVE_SYS_UTSNAME_H.c.obj] Error 1
+make[1]: *** [CMakeFiles/cmTC_d7d8e.dir/build.make:85: CMakeFiles/cmTC_d7d8e.dir/HAVE_SYS_UTSNAME_H.c.obj] Error 1
 make[1]: Leaving directory '/d/Download/MinGW-64-souorce/libical-2.0.0/mingw64/CMakeFiles/CMakeTmp'
-make: *** [Makefile:140: cmTC_1cb8d/fast] Error 2
+make: *** [Makefile:140: cmTC_d7d8e/fast] Error 2
 
 
 Source:
@@ -70,230 +70,230 @@ int main(void){return 0;}
 Determining if the function fork exists failed with the following output:
 Change Dir: D:/Download/MinGW-64-souorce/libical-2.0.0/mingw64/CMakeFiles/CMakeTmp
 
-Run Build Command(s):D:/MSYS2/usr/bin/make.exe cmTC_de6b1/fast && /usr/bin/make  -f CMakeFiles/cmTC_de6b1.dir/build.make CMakeFiles/cmTC_de6b1.dir/build
+Run Build Command(s):D:/MSYS2/usr/bin/make.exe cmTC_77942/fast && /usr/bin/make  -f CMakeFiles/cmTC_77942.dir/build.make CMakeFiles/cmTC_77942.dir/build
 make[1]: Entering directory '/d/Download/MinGW-64-souorce/libical-2.0.0/mingw64/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_de6b1.dir/CheckFunctionExists.c.obj
-/D/MSYS2/mingw64/bin/gcc.exe   -DCHECK_FUNCTION_EXISTS=fork -o CMakeFiles/cmTC_de6b1.dir/CheckFunctionExists.c.obj -c /D/MSYS2/mingw64/share/cmake-3.19/Modules/CheckFunctionExists.c
+Building C object CMakeFiles/cmTC_77942.dir/CheckFunctionExists.c.obj
+/D/MSYS2/mingw64/bin/gcc.exe   -DCHECK_FUNCTION_EXISTS=fork -o CMakeFiles/cmTC_77942.dir/CheckFunctionExists.c.obj -c /D/MSYS2/mingw64/share/cmake-3.19/Modules/CheckFunctionExists.c
 <command-line>: warning: conflicting types for built-in function 'fork' [-Wbuiltin-declaration-mismatch]
 D:/MSYS2/mingw64/share/cmake-3.19/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
    CHECK_FUNCTION_EXISTS(void);
    ^~~~~~~~~~~~~~~~~~~~~
-Linking C executable cmTC_de6b1.exe
-/D/MSYS2/mingw64/bin/cmake.exe -E rm -f CMakeFiles/cmTC_de6b1.dir/objects.a
-/D/MSYS2/mingw64/bin/ar.exe cr CMakeFiles/cmTC_de6b1.dir/objects.a "CMakeFiles/cmTC_de6b1.dir/CheckFunctionExists.c.obj" 
-/D/MSYS2/mingw64/bin/gcc.exe  -DCHECK_FUNCTION_EXISTS=fork -Wl,--whole-archive CMakeFiles/cmTC_de6b1.dir/objects.a -Wl,--no-whole-archive -o cmTC_de6b1.exe -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
-D:/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe: CMakeFiles/cmTC_de6b1.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text+0x15): undefined reference to `fork'
+Linking C executable cmTC_77942.exe
+/D/MSYS2/mingw64/bin/cmake.exe -E rm -f CMakeFiles/cmTC_77942.dir/objects.a
+/D/MSYS2/mingw64/bin/ar.exe cr CMakeFiles/cmTC_77942.dir/objects.a "CMakeFiles/cmTC_77942.dir/CheckFunctionExists.c.obj" 
+/D/MSYS2/mingw64/bin/gcc.exe  -DCHECK_FUNCTION_EXISTS=fork -Wl,--whole-archive CMakeFiles/cmTC_77942.dir/objects.a -Wl,--no-whole-archive -o cmTC_77942.exe -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
+D:/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe: CMakeFiles/cmTC_77942.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text+0x15): undefined reference to `fork'
 collect2.exe: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_de6b1.dir/build.make:107: cmTC_de6b1.exe] Error 1
+make[1]: *** [CMakeFiles/cmTC_77942.dir/build.make:107: cmTC_77942.exe] Error 1
 make[1]: Leaving directory '/d/Download/MinGW-64-souorce/libical-2.0.0/mingw64/CMakeFiles/CMakeTmp'
-make: *** [Makefile:140: cmTC_de6b1/fast] Error 2
+make: *** [Makefile:140: cmTC_77942/fast] Error 2
 
 
 
 Determining if the function getpwent exists failed with the following output:
 Change Dir: D:/Download/MinGW-64-souorce/libical-2.0.0/mingw64/CMakeFiles/CMakeTmp
 
-Run Build Command(s):D:/MSYS2/usr/bin/make.exe cmTC_95486/fast && /usr/bin/make  -f CMakeFiles/cmTC_95486.dir/build.make CMakeFiles/cmTC_95486.dir/build
+Run Build Command(s):D:/MSYS2/usr/bin/make.exe cmTC_faf00/fast && /usr/bin/make  -f CMakeFiles/cmTC_faf00.dir/build.make CMakeFiles/cmTC_faf00.dir/build
 make[1]: Entering directory '/d/Download/MinGW-64-souorce/libical-2.0.0/mingw64/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_95486.dir/CheckFunctionExists.c.obj
-/D/MSYS2/mingw64/bin/gcc.exe   -DCHECK_FUNCTION_EXISTS=getpwent -o CMakeFiles/cmTC_95486.dir/CheckFunctionExists.c.obj -c /D/MSYS2/mingw64/share/cmake-3.19/Modules/CheckFunctionExists.c
-Linking C executable cmTC_95486.exe
-/D/MSYS2/mingw64/bin/cmake.exe -E rm -f CMakeFiles/cmTC_95486.dir/objects.a
-/D/MSYS2/mingw64/bin/ar.exe cr CMakeFiles/cmTC_95486.dir/objects.a "CMakeFiles/cmTC_95486.dir/CheckFunctionExists.c.obj" 
-/D/MSYS2/mingw64/bin/gcc.exe  -DCHECK_FUNCTION_EXISTS=getpwent -Wl,--whole-archive CMakeFiles/cmTC_95486.dir/objects.a -Wl,--no-whole-archive -o cmTC_95486.exe -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
-D:/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe: CMakeFiles/cmTC_95486.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text+0x15): undefined reference to `getpwent'
+Building C object CMakeFiles/cmTC_faf00.dir/CheckFunctionExists.c.obj
+/D/MSYS2/mingw64/bin/gcc.exe   -DCHECK_FUNCTION_EXISTS=getpwent -o CMakeFiles/cmTC_faf00.dir/CheckFunctionExists.c.obj -c /D/MSYS2/mingw64/share/cmake-3.19/Modules/CheckFunctionExists.c
+Linking C executable cmTC_faf00.exe
+/D/MSYS2/mingw64/bin/cmake.exe -E rm -f CMakeFiles/cmTC_faf00.dir/objects.a
+/D/MSYS2/mingw64/bin/ar.exe cr CMakeFiles/cmTC_faf00.dir/objects.a "CMakeFiles/cmTC_faf00.dir/CheckFunctionExists.c.obj" 
+/D/MSYS2/mingw64/bin/gcc.exe  -DCHECK_FUNCTION_EXISTS=getpwent -Wl,--whole-archive CMakeFiles/cmTC_faf00.dir/objects.a -Wl,--no-whole-archive -o cmTC_faf00.exe -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
+D:/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe: CMakeFiles/cmTC_faf00.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text+0x15): undefined reference to `getpwent'
 collect2.exe: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_95486.dir/build.make:107: cmTC_95486.exe] Error 1
+make[1]: *** [CMakeFiles/cmTC_faf00.dir/build.make:107: cmTC_faf00.exe] Error 1
 make[1]: Leaving directory '/d/Download/MinGW-64-souorce/libical-2.0.0/mingw64/CMakeFiles/CMakeTmp'
-make: *** [Makefile:140: cmTC_95486/fast] Error 2
+make: *** [Makefile:140: cmTC_faf00/fast] Error 2
 
 
 
 Determining if the function gmtime_r exists failed with the following output:
 Change Dir: D:/Download/MinGW-64-souorce/libical-2.0.0/mingw64/CMakeFiles/CMakeTmp
 
-Run Build Command(s):D:/MSYS2/usr/bin/make.exe cmTC_1a41e/fast && /usr/bin/make  -f CMakeFiles/cmTC_1a41e.dir/build.make CMakeFiles/cmTC_1a41e.dir/build
+Run Build Command(s):D:/MSYS2/usr/bin/make.exe cmTC_ded70/fast && /usr/bin/make  -f CMakeFiles/cmTC_ded70.dir/build.make CMakeFiles/cmTC_ded70.dir/build
 make[1]: Entering directory '/d/Download/MinGW-64-souorce/libical-2.0.0/mingw64/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_1a41e.dir/CheckFunctionExists.c.obj
-/D/MSYS2/mingw64/bin/gcc.exe   -DCHECK_FUNCTION_EXISTS=gmtime_r -o CMakeFiles/cmTC_1a41e.dir/CheckFunctionExists.c.obj -c /D/MSYS2/mingw64/share/cmake-3.19/Modules/CheckFunctionExists.c
-Linking C executable cmTC_1a41e.exe
-/D/MSYS2/mingw64/bin/cmake.exe -E rm -f CMakeFiles/cmTC_1a41e.dir/objects.a
-/D/MSYS2/mingw64/bin/ar.exe cr CMakeFiles/cmTC_1a41e.dir/objects.a "CMakeFiles/cmTC_1a41e.dir/CheckFunctionExists.c.obj" 
-/D/MSYS2/mingw64/bin/gcc.exe  -DCHECK_FUNCTION_EXISTS=gmtime_r -Wl,--whole-archive CMakeFiles/cmTC_1a41e.dir/objects.a -Wl,--no-whole-archive -o cmTC_1a41e.exe -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
-D:/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe: CMakeFiles/cmTC_1a41e.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text+0x15): undefined reference to `gmtime_r'
+Building C object CMakeFiles/cmTC_ded70.dir/CheckFunctionExists.c.obj
+/D/MSYS2/mingw64/bin/gcc.exe   -DCHECK_FUNCTION_EXISTS=gmtime_r -o CMakeFiles/cmTC_ded70.dir/CheckFunctionExists.c.obj -c /D/MSYS2/mingw64/share/cmake-3.19/Modules/CheckFunctionExists.c
+Linking C executable cmTC_ded70.exe
+/D/MSYS2/mingw64/bin/cmake.exe -E rm -f CMakeFiles/cmTC_ded70.dir/objects.a
+/D/MSYS2/mingw64/bin/ar.exe cr CMakeFiles/cmTC_ded70.dir/objects.a "CMakeFiles/cmTC_ded70.dir/CheckFunctionExists.c.obj" 
+/D/MSYS2/mingw64/bin/gcc.exe  -DCHECK_FUNCTION_EXISTS=gmtime_r -Wl,--whole-archive CMakeFiles/cmTC_ded70.dir/objects.a -Wl,--no-whole-archive -o cmTC_ded70.exe -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
+D:/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe: CMakeFiles/cmTC_ded70.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text+0x15): undefined reference to `gmtime_r'
 collect2.exe: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_1a41e.dir/build.make:107: cmTC_1a41e.exe] Error 1
+make[1]: *** [CMakeFiles/cmTC_ded70.dir/build.make:107: cmTC_ded70.exe] Error 1
 make[1]: Leaving directory '/d/Download/MinGW-64-souorce/libical-2.0.0/mingw64/CMakeFiles/CMakeTmp'
-make: *** [Makefile:140: cmTC_1a41e/fast] Error 2
+make: *** [Makefile:140: cmTC_ded70/fast] Error 2
 
 
 
 Determining if the function localtime_r exists failed with the following output:
 Change Dir: D:/Download/MinGW-64-souorce/libical-2.0.0/mingw64/CMakeFiles/CMakeTmp
 
-Run Build Command(s):D:/MSYS2/usr/bin/make.exe cmTC_986a2/fast && /usr/bin/make  -f CMakeFiles/cmTC_986a2.dir/build.make CMakeFiles/cmTC_986a2.dir/build
+Run Build Command(s):D:/MSYS2/usr/bin/make.exe cmTC_e0902/fast && /usr/bin/make  -f CMakeFiles/cmTC_e0902.dir/build.make CMakeFiles/cmTC_e0902.dir/build
 make[1]: Entering directory '/d/Download/MinGW-64-souorce/libical-2.0.0/mingw64/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_986a2.dir/CheckFunctionExists.c.obj
-/D/MSYS2/mingw64/bin/gcc.exe   -DCHECK_FUNCTION_EXISTS=localtime_r -o CMakeFiles/cmTC_986a2.dir/CheckFunctionExists.c.obj -c /D/MSYS2/mingw64/share/cmake-3.19/Modules/CheckFunctionExists.c
-Linking C executable cmTC_986a2.exe
-/D/MSYS2/mingw64/bin/cmake.exe -E rm -f CMakeFiles/cmTC_986a2.dir/objects.a
-/D/MSYS2/mingw64/bin/ar.exe cr CMakeFiles/cmTC_986a2.dir/objects.a "CMakeFiles/cmTC_986a2.dir/CheckFunctionExists.c.obj" 
-/D/MSYS2/mingw64/bin/gcc.exe  -DCHECK_FUNCTION_EXISTS=localtime_r -Wl,--whole-archive CMakeFiles/cmTC_986a2.dir/objects.a -Wl,--no-whole-archive -o cmTC_986a2.exe -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
-D:/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe: CMakeFiles/cmTC_986a2.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text+0x15): undefined reference to `localtime_r'
+Building C object CMakeFiles/cmTC_e0902.dir/CheckFunctionExists.c.obj
+/D/MSYS2/mingw64/bin/gcc.exe   -DCHECK_FUNCTION_EXISTS=localtime_r -o CMakeFiles/cmTC_e0902.dir/CheckFunctionExists.c.obj -c /D/MSYS2/mingw64/share/cmake-3.19/Modules/CheckFunctionExists.c
+Linking C executable cmTC_e0902.exe
+/D/MSYS2/mingw64/bin/cmake.exe -E rm -f CMakeFiles/cmTC_e0902.dir/objects.a
+/D/MSYS2/mingw64/bin/ar.exe cr CMakeFiles/cmTC_e0902.dir/objects.a "CMakeFiles/cmTC_e0902.dir/CheckFunctionExists.c.obj" 
+/D/MSYS2/mingw64/bin/gcc.exe  -DCHECK_FUNCTION_EXISTS=localtime_r -Wl,--whole-archive CMakeFiles/cmTC_e0902.dir/objects.a -Wl,--no-whole-archive -o cmTC_e0902.exe -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
+D:/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe: CMakeFiles/cmTC_e0902.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text+0x15): undefined reference to `localtime_r'
 collect2.exe: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_986a2.dir/build.make:107: cmTC_986a2.exe] Error 1
+make[1]: *** [CMakeFiles/cmTC_e0902.dir/build.make:107: cmTC_e0902.exe] Error 1
 make[1]: Leaving directory '/d/Download/MinGW-64-souorce/libical-2.0.0/mingw64/CMakeFiles/CMakeTmp'
-make: *** [Makefile:140: cmTC_986a2/fast] Error 2
+make: *** [Makefile:140: cmTC_e0902/fast] Error 2
 
 
 
 Determining if the function waitpid exists failed with the following output:
 Change Dir: D:/Download/MinGW-64-souorce/libical-2.0.0/mingw64/CMakeFiles/CMakeTmp
 
-Run Build Command(s):D:/MSYS2/usr/bin/make.exe cmTC_d6ff3/fast && /usr/bin/make  -f CMakeFiles/cmTC_d6ff3.dir/build.make CMakeFiles/cmTC_d6ff3.dir/build
+Run Build Command(s):D:/MSYS2/usr/bin/make.exe cmTC_e1e36/fast && /usr/bin/make  -f CMakeFiles/cmTC_e1e36.dir/build.make CMakeFiles/cmTC_e1e36.dir/build
 make[1]: Entering directory '/d/Download/MinGW-64-souorce/libical-2.0.0/mingw64/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_d6ff3.dir/CheckFunctionExists.c.obj
-/D/MSYS2/mingw64/bin/gcc.exe   -DCHECK_FUNCTION_EXISTS=waitpid -o CMakeFiles/cmTC_d6ff3.dir/CheckFunctionExists.c.obj -c /D/MSYS2/mingw64/share/cmake-3.19/Modules/CheckFunctionExists.c
-Linking C executable cmTC_d6ff3.exe
-/D/MSYS2/mingw64/bin/cmake.exe -E rm -f CMakeFiles/cmTC_d6ff3.dir/objects.a
-/D/MSYS2/mingw64/bin/ar.exe cr CMakeFiles/cmTC_d6ff3.dir/objects.a "CMakeFiles/cmTC_d6ff3.dir/CheckFunctionExists.c.obj" 
-/D/MSYS2/mingw64/bin/gcc.exe  -DCHECK_FUNCTION_EXISTS=waitpid -Wl,--whole-archive CMakeFiles/cmTC_d6ff3.dir/objects.a -Wl,--no-whole-archive -o cmTC_d6ff3.exe -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
-D:/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe: CMakeFiles/cmTC_d6ff3.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text+0x15): undefined reference to `waitpid'
+Building C object CMakeFiles/cmTC_e1e36.dir/CheckFunctionExists.c.obj
+/D/MSYS2/mingw64/bin/gcc.exe   -DCHECK_FUNCTION_EXISTS=waitpid -o CMakeFiles/cmTC_e1e36.dir/CheckFunctionExists.c.obj -c /D/MSYS2/mingw64/share/cmake-3.19/Modules/CheckFunctionExists.c
+Linking C executable cmTC_e1e36.exe
+/D/MSYS2/mingw64/bin/cmake.exe -E rm -f CMakeFiles/cmTC_e1e36.dir/objects.a
+/D/MSYS2/mingw64/bin/ar.exe cr CMakeFiles/cmTC_e1e36.dir/objects.a "CMakeFiles/cmTC_e1e36.dir/CheckFunctionExists.c.obj" 
+/D/MSYS2/mingw64/bin/gcc.exe  -DCHECK_FUNCTION_EXISTS=waitpid -Wl,--whole-archive CMakeFiles/cmTC_e1e36.dir/objects.a -Wl,--no-whole-archive -o cmTC_e1e36.exe -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
+D:/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe: CMakeFiles/cmTC_e1e36.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text+0x15): undefined reference to `waitpid'
 collect2.exe: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_d6ff3.dir/build.make:107: cmTC_d6ff3.exe] Error 1
+make[1]: *** [CMakeFiles/cmTC_e1e36.dir/build.make:107: cmTC_e1e36.exe] Error 1
 make[1]: Leaving directory '/d/Download/MinGW-64-souorce/libical-2.0.0/mingw64/CMakeFiles/CMakeTmp'
-make: *** [Makefile:140: cmTC_d6ff3/fast] Error 2
+make: *** [Makefile:140: cmTC_e1e36/fast] Error 2
 
 
 
 Determining if the function backtrace exists failed with the following output:
 Change Dir: D:/Download/MinGW-64-souorce/libical-2.0.0/mingw64/CMakeFiles/CMakeTmp
 
-Run Build Command(s):D:/MSYS2/usr/bin/make.exe cmTC_d45fc/fast && /usr/bin/make  -f CMakeFiles/cmTC_d45fc.dir/build.make CMakeFiles/cmTC_d45fc.dir/build
+Run Build Command(s):D:/MSYS2/usr/bin/make.exe cmTC_ebd81/fast && /usr/bin/make  -f CMakeFiles/cmTC_ebd81.dir/build.make CMakeFiles/cmTC_ebd81.dir/build
 make[1]: Entering directory '/d/Download/MinGW-64-souorce/libical-2.0.0/mingw64/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_d45fc.dir/CheckFunctionExists.c.obj
-/D/MSYS2/mingw64/bin/gcc.exe   -DCHECK_FUNCTION_EXISTS=backtrace -o CMakeFiles/cmTC_d45fc.dir/CheckFunctionExists.c.obj -c /D/MSYS2/mingw64/share/cmake-3.19/Modules/CheckFunctionExists.c
-Linking C executable cmTC_d45fc.exe
-/D/MSYS2/mingw64/bin/cmake.exe -E rm -f CMakeFiles/cmTC_d45fc.dir/objects.a
-/D/MSYS2/mingw64/bin/ar.exe cr CMakeFiles/cmTC_d45fc.dir/objects.a "CMakeFiles/cmTC_d45fc.dir/CheckFunctionExists.c.obj" 
-/D/MSYS2/mingw64/bin/gcc.exe  -DCHECK_FUNCTION_EXISTS=backtrace -Wl,--whole-archive CMakeFiles/cmTC_d45fc.dir/objects.a -Wl,--no-whole-archive -o cmTC_d45fc.exe -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
-D:/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe: CMakeFiles/cmTC_d45fc.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text+0x15): undefined reference to `backtrace'
+Building C object CMakeFiles/cmTC_ebd81.dir/CheckFunctionExists.c.obj
+/D/MSYS2/mingw64/bin/gcc.exe   -DCHECK_FUNCTION_EXISTS=backtrace -o CMakeFiles/cmTC_ebd81.dir/CheckFunctionExists.c.obj -c /D/MSYS2/mingw64/share/cmake-3.19/Modules/CheckFunctionExists.c
+Linking C executable cmTC_ebd81.exe
+/D/MSYS2/mingw64/bin/cmake.exe -E rm -f CMakeFiles/cmTC_ebd81.dir/objects.a
+/D/MSYS2/mingw64/bin/ar.exe cr CMakeFiles/cmTC_ebd81.dir/objects.a "CMakeFiles/cmTC_ebd81.dir/CheckFunctionExists.c.obj" 
+/D/MSYS2/mingw64/bin/gcc.exe  -DCHECK_FUNCTION_EXISTS=backtrace -Wl,--whole-archive CMakeFiles/cmTC_ebd81.dir/objects.a -Wl,--no-whole-archive -o cmTC_ebd81.exe -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
+D:/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe: CMakeFiles/cmTC_ebd81.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text+0x15): undefined reference to `backtrace'
 collect2.exe: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_d45fc.dir/build.make:107: cmTC_d45fc.exe] Error 1
+make[1]: *** [CMakeFiles/cmTC_ebd81.dir/build.make:107: cmTC_ebd81.exe] Error 1
 make[1]: Leaving directory '/d/Download/MinGW-64-souorce/libical-2.0.0/mingw64/CMakeFiles/CMakeTmp'
-make: *** [Makefile:140: cmTC_d45fc/fast] Error 2
+make: *** [Makefile:140: cmTC_ebd81/fast] Error 2
 
 
 
 Determining if the function setenv exists failed with the following output:
 Change Dir: D:/Download/MinGW-64-souorce/libical-2.0.0/mingw64/CMakeFiles/CMakeTmp
 
-Run Build Command(s):D:/MSYS2/usr/bin/make.exe cmTC_71321/fast && /usr/bin/make  -f CMakeFiles/cmTC_71321.dir/build.make CMakeFiles/cmTC_71321.dir/build
+Run Build Command(s):D:/MSYS2/usr/bin/make.exe cmTC_62975/fast && /usr/bin/make  -f CMakeFiles/cmTC_62975.dir/build.make CMakeFiles/cmTC_62975.dir/build
 make[1]: Entering directory '/d/Download/MinGW-64-souorce/libical-2.0.0/mingw64/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_71321.dir/CheckFunctionExists.c.obj
-/D/MSYS2/mingw64/bin/gcc.exe   -DCHECK_FUNCTION_EXISTS=setenv -o CMakeFiles/cmTC_71321.dir/CheckFunctionExists.c.obj -c /D/MSYS2/mingw64/share/cmake-3.19/Modules/CheckFunctionExists.c
-Linking C executable cmTC_71321.exe
-/D/MSYS2/mingw64/bin/cmake.exe -E rm -f CMakeFiles/cmTC_71321.dir/objects.a
-/D/MSYS2/mingw64/bin/ar.exe cr CMakeFiles/cmTC_71321.dir/objects.a "CMakeFiles/cmTC_71321.dir/CheckFunctionExists.c.obj" 
-/D/MSYS2/mingw64/bin/gcc.exe  -DCHECK_FUNCTION_EXISTS=setenv -Wl,--whole-archive CMakeFiles/cmTC_71321.dir/objects.a -Wl,--no-whole-archive -o cmTC_71321.exe -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
-D:/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe: CMakeFiles/cmTC_71321.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text+0x15): undefined reference to `setenv'
+Building C object CMakeFiles/cmTC_62975.dir/CheckFunctionExists.c.obj
+/D/MSYS2/mingw64/bin/gcc.exe   -DCHECK_FUNCTION_EXISTS=setenv -o CMakeFiles/cmTC_62975.dir/CheckFunctionExists.c.obj -c /D/MSYS2/mingw64/share/cmake-3.19/Modules/CheckFunctionExists.c
+Linking C executable cmTC_62975.exe
+/D/MSYS2/mingw64/bin/cmake.exe -E rm -f CMakeFiles/cmTC_62975.dir/objects.a
+/D/MSYS2/mingw64/bin/ar.exe cr CMakeFiles/cmTC_62975.dir/objects.a "CMakeFiles/cmTC_62975.dir/CheckFunctionExists.c.obj" 
+/D/MSYS2/mingw64/bin/gcc.exe  -DCHECK_FUNCTION_EXISTS=setenv -Wl,--whole-archive CMakeFiles/cmTC_62975.dir/objects.a -Wl,--no-whole-archive -o cmTC_62975.exe -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
+D:/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe: CMakeFiles/cmTC_62975.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text+0x15): undefined reference to `setenv'
 collect2.exe: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_71321.dir/build.make:107: cmTC_71321.exe] Error 1
+make[1]: *** [CMakeFiles/cmTC_62975.dir/build.make:107: cmTC_62975.exe] Error 1
 make[1]: Leaving directory '/d/Download/MinGW-64-souorce/libical-2.0.0/mingw64/CMakeFiles/CMakeTmp'
-make: *** [Makefile:140: cmTC_71321/fast] Error 2
+make: *** [Makefile:140: cmTC_62975/fast] Error 2
 
 
 
 Determining if the function unsetenv exists failed with the following output:
 Change Dir: D:/Download/MinGW-64-souorce/libical-2.0.0/mingw64/CMakeFiles/CMakeTmp
 
-Run Build Command(s):D:/MSYS2/usr/bin/make.exe cmTC_5b8b9/fast && /usr/bin/make  -f CMakeFiles/cmTC_5b8b9.dir/build.make CMakeFiles/cmTC_5b8b9.dir/build
+Run Build Command(s):D:/MSYS2/usr/bin/make.exe cmTC_186c7/fast && /usr/bin/make  -f CMakeFiles/cmTC_186c7.dir/build.make CMakeFiles/cmTC_186c7.dir/build
 make[1]: Entering directory '/d/Download/MinGW-64-souorce/libical-2.0.0/mingw64/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_5b8b9.dir/CheckFunctionExists.c.obj
-/D/MSYS2/mingw64/bin/gcc.exe   -DCHECK_FUNCTION_EXISTS=unsetenv -o CMakeFiles/cmTC_5b8b9.dir/CheckFunctionExists.c.obj -c /D/MSYS2/mingw64/share/cmake-3.19/Modules/CheckFunctionExists.c
-Linking C executable cmTC_5b8b9.exe
-/D/MSYS2/mingw64/bin/cmake.exe -E rm -f CMakeFiles/cmTC_5b8b9.dir/objects.a
-/D/MSYS2/mingw64/bin/ar.exe cr CMakeFiles/cmTC_5b8b9.dir/objects.a "CMakeFiles/cmTC_5b8b9.dir/CheckFunctionExists.c.obj" 
-/D/MSYS2/mingw64/bin/gcc.exe  -DCHECK_FUNCTION_EXISTS=unsetenv -Wl,--whole-archive CMakeFiles/cmTC_5b8b9.dir/objects.a -Wl,--no-whole-archive -o cmTC_5b8b9.exe -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
-D:/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe: CMakeFiles/cmTC_5b8b9.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text+0x15): undefined reference to `unsetenv'
+Building C object CMakeFiles/cmTC_186c7.dir/CheckFunctionExists.c.obj
+/D/MSYS2/mingw64/bin/gcc.exe   -DCHECK_FUNCTION_EXISTS=unsetenv -o CMakeFiles/cmTC_186c7.dir/CheckFunctionExists.c.obj -c /D/MSYS2/mingw64/share/cmake-3.19/Modules/CheckFunctionExists.c
+Linking C executable cmTC_186c7.exe
+/D/MSYS2/mingw64/bin/cmake.exe -E rm -f CMakeFiles/cmTC_186c7.dir/objects.a
+/D/MSYS2/mingw64/bin/ar.exe cr CMakeFiles/cmTC_186c7.dir/objects.a "CMakeFiles/cmTC_186c7.dir/CheckFunctionExists.c.obj" 
+/D/MSYS2/mingw64/bin/gcc.exe  -DCHECK_FUNCTION_EXISTS=unsetenv -Wl,--whole-archive CMakeFiles/cmTC_186c7.dir/objects.a -Wl,--no-whole-archive -o cmTC_186c7.exe -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
+D:/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe: CMakeFiles/cmTC_186c7.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text+0x15): undefined reference to `unsetenv'
 collect2.exe: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_5b8b9.dir/build.make:107: cmTC_5b8b9.exe] Error 1
+make[1]: *** [CMakeFiles/cmTC_186c7.dir/build.make:107: cmTC_186c7.exe] Error 1
 make[1]: Leaving directory '/d/Download/MinGW-64-souorce/libical-2.0.0/mingw64/CMakeFiles/CMakeTmp'
-make: *** [Makefile:140: cmTC_5b8b9/fast] Error 2
+make: *** [Makefile:140: cmTC_186c7/fast] Error 2
 
 
 
 Determining if the function GetNumberFormat exists failed with the following output:
 Change Dir: D:/Download/MinGW-64-souorce/libical-2.0.0/mingw64/CMakeFiles/CMakeTmp
 
-Run Build Command(s):D:/MSYS2/usr/bin/make.exe cmTC_35182/fast && /usr/bin/make  -f CMakeFiles/cmTC_35182.dir/build.make CMakeFiles/cmTC_35182.dir/build
+Run Build Command(s):D:/MSYS2/usr/bin/make.exe cmTC_b1c03/fast && /usr/bin/make  -f CMakeFiles/cmTC_b1c03.dir/build.make CMakeFiles/cmTC_b1c03.dir/build
 make[1]: Entering directory '/d/Download/MinGW-64-souorce/libical-2.0.0/mingw64/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_35182.dir/CheckFunctionExists.c.obj
-/D/MSYS2/mingw64/bin/gcc.exe   -DCHECK_FUNCTION_EXISTS=GetNumberFormat -o CMakeFiles/cmTC_35182.dir/CheckFunctionExists.c.obj -c /D/MSYS2/mingw64/share/cmake-3.19/Modules/CheckFunctionExists.c
-Linking C executable cmTC_35182.exe
-/D/MSYS2/mingw64/bin/cmake.exe -E rm -f CMakeFiles/cmTC_35182.dir/objects.a
-/D/MSYS2/mingw64/bin/ar.exe cr CMakeFiles/cmTC_35182.dir/objects.a "CMakeFiles/cmTC_35182.dir/CheckFunctionExists.c.obj" 
-/D/MSYS2/mingw64/bin/gcc.exe  -DCHECK_FUNCTION_EXISTS=GetNumberFormat -Wl,--whole-archive CMakeFiles/cmTC_35182.dir/objects.a -Wl,--no-whole-archive -o cmTC_35182.exe -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
-D:/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe: CMakeFiles/cmTC_35182.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text+0x15): undefined reference to `GetNumberFormat'
+Building C object CMakeFiles/cmTC_b1c03.dir/CheckFunctionExists.c.obj
+/D/MSYS2/mingw64/bin/gcc.exe   -DCHECK_FUNCTION_EXISTS=GetNumberFormat -o CMakeFiles/cmTC_b1c03.dir/CheckFunctionExists.c.obj -c /D/MSYS2/mingw64/share/cmake-3.19/Modules/CheckFunctionExists.c
+Linking C executable cmTC_b1c03.exe
+/D/MSYS2/mingw64/bin/cmake.exe -E rm -f CMakeFiles/cmTC_b1c03.dir/objects.a
+/D/MSYS2/mingw64/bin/ar.exe cr CMakeFiles/cmTC_b1c03.dir/objects.a "CMakeFiles/cmTC_b1c03.dir/CheckFunctionExists.c.obj" 
+/D/MSYS2/mingw64/bin/gcc.exe  -DCHECK_FUNCTION_EXISTS=GetNumberFormat -Wl,--whole-archive CMakeFiles/cmTC_b1c03.dir/objects.a -Wl,--no-whole-archive -o cmTC_b1c03.exe -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
+D:/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe: CMakeFiles/cmTC_b1c03.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text+0x15): undefined reference to `GetNumberFormat'
 collect2.exe: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_35182.dir/build.make:107: cmTC_35182.exe] Error 1
+make[1]: *** [CMakeFiles/cmTC_b1c03.dir/build.make:107: cmTC_b1c03.exe] Error 1
 make[1]: Leaving directory '/d/Download/MinGW-64-souorce/libical-2.0.0/mingw64/CMakeFiles/CMakeTmp'
-make: *** [Makefile:140: cmTC_35182/fast] Error 2
+make: *** [Makefile:140: cmTC_b1c03/fast] Error 2
 
 
 
 Determining if the function pthread_attr_get_np exists in the pthread failed with the following output:
 Change Dir: D:/Download/MinGW-64-souorce/libical-2.0.0/mingw64/CMakeFiles/CMakeTmp
 
-Run Build Command(s):D:/MSYS2/usr/bin/make.exe cmTC_068d7/fast && /usr/bin/make  -f CMakeFiles/cmTC_068d7.dir/build.make CMakeFiles/cmTC_068d7.dir/build
+Run Build Command(s):D:/MSYS2/usr/bin/make.exe cmTC_60215/fast && /usr/bin/make  -f CMakeFiles/cmTC_60215.dir/build.make CMakeFiles/cmTC_60215.dir/build
 make[1]: Entering directory '/d/Download/MinGW-64-souorce/libical-2.0.0/mingw64/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_068d7.dir/CheckFunctionExists.c.obj
-/D/MSYS2/mingw64/bin/gcc.exe   -DCHECK_FUNCTION_EXISTS=pthread_attr_get_np -o CMakeFiles/cmTC_068d7.dir/CheckFunctionExists.c.obj -c /D/MSYS2/mingw64/share/cmake-3.19/Modules/CheckFunctionExists.c
-Linking C executable cmTC_068d7.exe
-/D/MSYS2/mingw64/bin/cmake.exe -E rm -f CMakeFiles/cmTC_068d7.dir/objects.a
-/D/MSYS2/mingw64/bin/ar.exe cr CMakeFiles/cmTC_068d7.dir/objects.a "CMakeFiles/cmTC_068d7.dir/CheckFunctionExists.c.obj" 
-/D/MSYS2/mingw64/bin/gcc.exe  -DCHECK_FUNCTION_EXISTS=pthread_attr_get_np -Wl,--whole-archive CMakeFiles/cmTC_068d7.dir/objects.a -Wl,--no-whole-archive -o cmTC_068d7.exe -Wl,--major-image-version,0,--minor-image-version,0  -lpthread -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
-D:/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe: CMakeFiles/cmTC_068d7.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text+0x15): undefined reference to `pthread_attr_get_np'
+Building C object CMakeFiles/cmTC_60215.dir/CheckFunctionExists.c.obj
+/D/MSYS2/mingw64/bin/gcc.exe   -DCHECK_FUNCTION_EXISTS=pthread_attr_get_np -o CMakeFiles/cmTC_60215.dir/CheckFunctionExists.c.obj -c /D/MSYS2/mingw64/share/cmake-3.19/Modules/CheckFunctionExists.c
+Linking C executable cmTC_60215.exe
+/D/MSYS2/mingw64/bin/cmake.exe -E rm -f CMakeFiles/cmTC_60215.dir/objects.a
+/D/MSYS2/mingw64/bin/ar.exe cr CMakeFiles/cmTC_60215.dir/objects.a "CMakeFiles/cmTC_60215.dir/CheckFunctionExists.c.obj" 
+/D/MSYS2/mingw64/bin/gcc.exe  -DCHECK_FUNCTION_EXISTS=pthread_attr_get_np -Wl,--whole-archive CMakeFiles/cmTC_60215.dir/objects.a -Wl,--no-whole-archive -o cmTC_60215.exe -Wl,--major-image-version,0,--minor-image-version,0  -lpthread -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
+D:/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe: CMakeFiles/cmTC_60215.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text+0x15): undefined reference to `pthread_attr_get_np'
 collect2.exe: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_068d7.dir/build.make:107: cmTC_068d7.exe] Error 1
+make[1]: *** [CMakeFiles/cmTC_60215.dir/build.make:107: cmTC_60215.exe] Error 1
 make[1]: Leaving directory '/d/Download/MinGW-64-souorce/libical-2.0.0/mingw64/CMakeFiles/CMakeTmp'
-make: *** [Makefile:140: cmTC_068d7/fast] Error 2
+make: *** [Makefile:140: cmTC_60215/fast] Error 2
 
 
 
 Determining if the function pthread_getattr_np exists in the pthread failed with the following output:
 Change Dir: D:/Download/MinGW-64-souorce/libical-2.0.0/mingw64/CMakeFiles/CMakeTmp
 
-Run Build Command(s):D:/MSYS2/usr/bin/make.exe cmTC_752ae/fast && /usr/bin/make  -f CMakeFiles/cmTC_752ae.dir/build.make CMakeFiles/cmTC_752ae.dir/build
+Run Build Command(s):D:/MSYS2/usr/bin/make.exe cmTC_ca890/fast && /usr/bin/make  -f CMakeFiles/cmTC_ca890.dir/build.make CMakeFiles/cmTC_ca890.dir/build
 make[1]: Entering directory '/d/Download/MinGW-64-souorce/libical-2.0.0/mingw64/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_752ae.dir/CheckFunctionExists.c.obj
-/D/MSYS2/mingw64/bin/gcc.exe   -DCHECK_FUNCTION_EXISTS=pthread_getattr_np -o CMakeFiles/cmTC_752ae.dir/CheckFunctionExists.c.obj -c /D/MSYS2/mingw64/share/cmake-3.19/Modules/CheckFunctionExists.c
-Linking C executable cmTC_752ae.exe
-/D/MSYS2/mingw64/bin/cmake.exe -E rm -f CMakeFiles/cmTC_752ae.dir/objects.a
-/D/MSYS2/mingw64/bin/ar.exe cr CMakeFiles/cmTC_752ae.dir/objects.a "CMakeFiles/cmTC_752ae.dir/CheckFunctionExists.c.obj" 
-/D/MSYS2/mingw64/bin/gcc.exe  -DCHECK_FUNCTION_EXISTS=pthread_getattr_np -Wl,--whole-archive CMakeFiles/cmTC_752ae.dir/objects.a -Wl,--no-whole-archive -o cmTC_752ae.exe -Wl,--major-image-version,0,--minor-image-version,0  -lpthread -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
-D:/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe: CMakeFiles/cmTC_752ae.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text+0x15): undefined reference to `pthread_getattr_np'
+Building C object CMakeFiles/cmTC_ca890.dir/CheckFunctionExists.c.obj
+/D/MSYS2/mingw64/bin/gcc.exe   -DCHECK_FUNCTION_EXISTS=pthread_getattr_np -o CMakeFiles/cmTC_ca890.dir/CheckFunctionExists.c.obj -c /D/MSYS2/mingw64/share/cmake-3.19/Modules/CheckFunctionExists.c
+Linking C executable cmTC_ca890.exe
+/D/MSYS2/mingw64/bin/cmake.exe -E rm -f CMakeFiles/cmTC_ca890.dir/objects.a
+/D/MSYS2/mingw64/bin/ar.exe cr CMakeFiles/cmTC_ca890.dir/objects.a "CMakeFiles/cmTC_ca890.dir/CheckFunctionExists.c.obj" 
+/D/MSYS2/mingw64/bin/gcc.exe  -DCHECK_FUNCTION_EXISTS=pthread_getattr_np -Wl,--whole-archive CMakeFiles/cmTC_ca890.dir/objects.a -Wl,--no-whole-archive -o cmTC_ca890.exe -Wl,--major-image-version,0,--minor-image-version,0  -lpthread -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
+D:/MSYS2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe: CMakeFiles/cmTC_ca890.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text+0x15): undefined reference to `pthread_getattr_np'
 collect2.exe: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_752ae.dir/build.make:107: cmTC_752ae.exe] Error 1
+make[1]: *** [CMakeFiles/cmTC_ca890.dir/build.make:107: cmTC_ca890.exe] Error 1
 make[1]: Leaving directory '/d/Download/MinGW-64-souorce/libical-2.0.0/mingw64/CMakeFiles/CMakeTmp'
-make: *** [Makefile:140: cmTC_752ae/fast] Error 2
+make: *** [Makefile:140: cmTC_ca890/fast] Error 2
 
 
 
 Determining if files pthread.h;pthread_np.h exist failed with the following output:
 Change Dir: D:/Download/MinGW-64-souorce/libical-2.0.0/mingw64/CMakeFiles/CMakeTmp
 
-Run Build Command(s):D:/MSYS2/usr/bin/make.exe cmTC_8e5fa/fast && /usr/bin/make  -f CMakeFiles/cmTC_8e5fa.dir/build.make CMakeFiles/cmTC_8e5fa.dir/build
+Run Build Command(s):D:/MSYS2/usr/bin/make.exe cmTC_8d3c5/fast && /usr/bin/make  -f CMakeFiles/cmTC_8d3c5.dir/build.make CMakeFiles/cmTC_8d3c5.dir/build
 make[1]: Entering directory '/d/Download/MinGW-64-souorce/libical-2.0.0/mingw64/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_8e5fa.dir/HAVE_PTHREAD_NP_H.c.obj
-/D/MSYS2/mingw64/bin/gcc.exe    -o CMakeFiles/cmTC_8e5fa.dir/HAVE_PTHREAD_NP_H.c.obj -c /D/Download/MinGW-64-souorce/libical-2.0.0/mingw64/CMakeFiles/CheckIncludeFiles/HAVE_PTHREAD_NP_H.c
+Building C object CMakeFiles/cmTC_8d3c5.dir/HAVE_PTHREAD_NP_H.c.obj
+/D/MSYS2/mingw64/bin/gcc.exe    -o CMakeFiles/cmTC_8d3c5.dir/HAVE_PTHREAD_NP_H.c.obj -c /D/Download/MinGW-64-souorce/libical-2.0.0/mingw64/CMakeFiles/CheckIncludeFiles/HAVE_PTHREAD_NP_H.c
 D:/Download/MinGW-64-souorce/libical-2.0.0/mingw64/CMakeFiles/CheckIncludeFiles/HAVE_PTHREAD_NP_H.c:3:10: fatal error: pthread_np.h: No such file or directory
  #include <pthread_np.h>
           ^~~~~~~~~~~~~~
 compilation terminated.
-make[1]: *** [CMakeFiles/cmTC_8e5fa.dir/build.make:85: CMakeFiles/cmTC_8e5fa.dir/HAVE_PTHREAD_NP_H.c.obj] Error 1
+make[1]: *** [CMakeFiles/cmTC_8d3c5.dir/build.make:85: CMakeFiles/cmTC_8d3c5.dir/HAVE_PTHREAD_NP_H.c.obj] Error 1
 make[1]: Leaving directory '/d/Download/MinGW-64-souorce/libical-2.0.0/mingw64/CMakeFiles/CMakeTmp'
-make: *** [Makefile:140: cmTC_8e5fa/fast] Error 2
+make: *** [Makefile:140: cmTC_8d3c5/fast] Error 2
 
 
 Source:

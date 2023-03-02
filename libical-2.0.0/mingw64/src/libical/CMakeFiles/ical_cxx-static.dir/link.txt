@@ -1,0 +1,2 @@
+D:/MSYS2/mingw64/bin/ar.exe qc ../../bin/libical_cxx.a CMakeFiles/ical_cxx-static.dir/icalparameter_cxx.cpp.obj CMakeFiles/ical_cxx-static.dir/icalproperty_cxx.cpp.obj CMakeFiles/ical_cxx-static.dir/icalvalue_cxx.cpp.obj CMakeFiles/ical_cxx-static.dir/vcomponent_cxx.cpp.obj
+D:/MSYS2/mingw64/bin/ranlib.exe ../../bin/libical_cxx.a

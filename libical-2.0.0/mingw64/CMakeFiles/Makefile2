@@ -393,8 +393,8 @@ src/libical/CMakeFiles/ical.dir/clean:
 # Target rules for target src/libical/CMakeFiles/ical_cxx.dir
 
 # All Build rule for target.
-src/libical/CMakeFiles/ical_cxx.dir/all: src/libical/CMakeFiles/ical.dir/all
 src/libical/CMakeFiles/ical_cxx.dir/all: src/libical/CMakeFiles/ical-header.dir/all
+src/libical/CMakeFiles/ical_cxx.dir/all: src/libical/CMakeFiles/ical.dir/all
 	$(MAKE) $(MAKESILENT) -f src/libical/CMakeFiles/ical_cxx.dir/build.make src/libical/CMakeFiles/ical_cxx.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/libical/CMakeFiles/ical_cxx.dir/build.make src/libical/CMakeFiles/ical_cxx.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/D/Download/MinGW-64-souorce/libical-2.0.0/mingw64/CMakeFiles --progress-num=53,54,55,56,57 "Built target ical_cxx"
@@ -503,10 +503,10 @@ src/libicalss/CMakeFiles/icalss-header.dir/clean:
 # Target rules for target src/libicalss/CMakeFiles/icalss_cxx.dir
 
 # All Build rule for target.
-src/libicalss/CMakeFiles/icalss_cxx.dir/all: src/libical/CMakeFiles/ical.dir/all
 src/libicalss/CMakeFiles/icalss_cxx.dir/all: src/libical/CMakeFiles/ical_cxx.dir/all
-src/libicalss/CMakeFiles/icalss_cxx.dir/all: src/libicalss/CMakeFiles/icalss.dir/all
+src/libicalss/CMakeFiles/icalss_cxx.dir/all: src/libical/CMakeFiles/ical.dir/all
 src/libicalss/CMakeFiles/icalss_cxx.dir/all: src/libicalss/CMakeFiles/icalss-header.dir/all
+src/libicalss/CMakeFiles/icalss_cxx.dir/all: src/libicalss/CMakeFiles/icalss.dir/all
 	$(MAKE) $(MAKESILENT) -f src/libicalss/CMakeFiles/icalss_cxx.dir/build.make src/libicalss/CMakeFiles/icalss_cxx.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/libicalss/CMakeFiles/icalss_cxx.dir/build.make src/libicalss/CMakeFiles/icalss_cxx.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/D/Download/MinGW-64-souorce/libical-2.0.0/mingw64/CMakeFiles --progress-num=73,74 "Built target icalss_cxx"
@@ -533,8 +533,8 @@ src/libicalss/CMakeFiles/icalss_cxx.dir/clean:
 # Target rules for target src/libicalvcal/CMakeFiles/icalvcal.dir
 
 # All Build rule for target.
-src/libicalvcal/CMakeFiles/icalvcal.dir/all: src/libical/CMakeFiles/ical.dir/all
 src/libicalvcal/CMakeFiles/icalvcal.dir/all: src/libical/CMakeFiles/ical-header.dir/all
+src/libicalvcal/CMakeFiles/icalvcal.dir/all: src/libical/CMakeFiles/ical.dir/all
 	$(MAKE) $(MAKESILENT) -f src/libicalvcal/CMakeFiles/icalvcal.dir/build.make src/libicalvcal/CMakeFiles/icalvcal.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/libicalvcal/CMakeFiles/icalvcal.dir/build.make src/libicalvcal/CMakeFiles/icalvcal.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/D/Download/MinGW-64-souorce/libical-2.0.0/mingw64/CMakeFiles --progress-num=75,76,77,78,79 "Built target icalvcal"
@@ -561,10 +561,10 @@ src/libicalvcal/CMakeFiles/icalvcal.dir/clean:
 # Target rules for target src/test/CMakeFiles/process.dir
 
 # All Build rule for target.
-src/test/CMakeFiles/process.dir/all: src/libical/CMakeFiles/ical.dir/all
 src/test/CMakeFiles/process.dir/all: src/libical/CMakeFiles/ical_cxx.dir/all
-src/test/CMakeFiles/process.dir/all: src/libicalss/CMakeFiles/icalss.dir/all
+src/test/CMakeFiles/process.dir/all: src/libical/CMakeFiles/ical.dir/all
 src/test/CMakeFiles/process.dir/all: src/libicalvcal/CMakeFiles/icalvcal.dir/all
+src/test/CMakeFiles/process.dir/all: src/libicalss/CMakeFiles/icalss.dir/all
 src/test/CMakeFiles/process.dir/all: src/libicalss/CMakeFiles/icalss_cxx.dir/all
 	$(MAKE) $(MAKESILENT) -f src/test/CMakeFiles/process.dir/build.make src/test/CMakeFiles/process.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/test/CMakeFiles/process.dir/build.make src/test/CMakeFiles/process.dir/build
@@ -592,10 +592,10 @@ src/test/CMakeFiles/process.dir/clean:
 # Target rules for target src/test/CMakeFiles/regression.dir
 
 # All Build rule for target.
-src/test/CMakeFiles/regression.dir/all: src/libical/CMakeFiles/ical.dir/all
 src/test/CMakeFiles/regression.dir/all: src/libical/CMakeFiles/ical_cxx.dir/all
-src/test/CMakeFiles/regression.dir/all: src/libicalss/CMakeFiles/icalss.dir/all
+src/test/CMakeFiles/regression.dir/all: src/libical/CMakeFiles/ical.dir/all
 src/test/CMakeFiles/regression.dir/all: src/libicalvcal/CMakeFiles/icalvcal.dir/all
+src/test/CMakeFiles/regression.dir/all: src/libicalss/CMakeFiles/icalss.dir/all
 src/test/CMakeFiles/regression.dir/all: src/libicalss/CMakeFiles/icalss_cxx.dir/all
 	$(MAKE) $(MAKESILENT) -f src/test/CMakeFiles/regression.dir/build.make src/test/CMakeFiles/regression.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/test/CMakeFiles/regression.dir/build.make src/test/CMakeFiles/regression.dir/build
@@ -623,10 +623,10 @@ src/test/CMakeFiles/regression.dir/clean:
 # Target rules for target src/test/CMakeFiles/builtin_timezones.dir
 
 # All Build rule for target.
-src/test/CMakeFiles/builtin_timezones.dir/all: src/libical/CMakeFiles/ical.dir/all
 src/test/CMakeFiles/builtin_timezones.dir/all: src/libical/CMakeFiles/ical_cxx.dir/all
-src/test/CMakeFiles/builtin_timezones.dir/all: src/libicalss/CMakeFiles/icalss.dir/all
+src/test/CMakeFiles/builtin_timezones.dir/all: src/libical/CMakeFiles/ical.dir/all
 src/test/CMakeFiles/builtin_timezones.dir/all: src/libicalvcal/CMakeFiles/icalvcal.dir/all
+src/test/CMakeFiles/builtin_timezones.dir/all: src/libicalss/CMakeFiles/icalss.dir/all
 src/test/CMakeFiles/builtin_timezones.dir/all: src/libicalss/CMakeFiles/icalss_cxx.dir/all
 	$(MAKE) $(MAKESILENT) -f src/test/CMakeFiles/builtin_timezones.dir/build.make src/test/CMakeFiles/builtin_timezones.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/test/CMakeFiles/builtin_timezones.dir/build.make src/test/CMakeFiles/builtin_timezones.dir/build
@@ -654,10 +654,10 @@ src/test/CMakeFiles/builtin_timezones.dir/clean:
 # Target rules for target src/test/CMakeFiles/recur.dir
 
 # All Build rule for target.
-src/test/CMakeFiles/recur.dir/all: src/libical/CMakeFiles/ical.dir/all
 src/test/CMakeFiles/recur.dir/all: src/libical/CMakeFiles/ical_cxx.dir/all
-src/test/CMakeFiles/recur.dir/all: src/libicalss/CMakeFiles/icalss.dir/all
+src/test/CMakeFiles/recur.dir/all: src/libical/CMakeFiles/ical.dir/all
 src/test/CMakeFiles/recur.dir/all: src/libicalvcal/CMakeFiles/icalvcal.dir/all
+src/test/CMakeFiles/recur.dir/all: src/libicalss/CMakeFiles/icalss.dir/all
 src/test/CMakeFiles/recur.dir/all: src/libicalss/CMakeFiles/icalss_cxx.dir/all
 	$(MAKE) $(MAKESILENT) -f src/test/CMakeFiles/recur.dir/build.make src/test/CMakeFiles/recur.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/test/CMakeFiles/recur.dir/build.make src/test/CMakeFiles/recur.dir/build
@@ -685,10 +685,10 @@ src/test/CMakeFiles/recur.dir/clean:
 # Target rules for target src/test/CMakeFiles/copycluster.dir
 
 # All Build rule for target.
-src/test/CMakeFiles/copycluster.dir/all: src/libical/CMakeFiles/ical.dir/all
 src/test/CMakeFiles/copycluster.dir/all: src/libical/CMakeFiles/ical_cxx.dir/all
-src/test/CMakeFiles/copycluster.dir/all: src/libicalss/CMakeFiles/icalss.dir/all
+src/test/CMakeFiles/copycluster.dir/all: src/libical/CMakeFiles/ical.dir/all
 src/test/CMakeFiles/copycluster.dir/all: src/libicalvcal/CMakeFiles/icalvcal.dir/all
+src/test/CMakeFiles/copycluster.dir/all: src/libicalss/CMakeFiles/icalss.dir/all
 src/test/CMakeFiles/copycluster.dir/all: src/libicalss/CMakeFiles/icalss_cxx.dir/all
 	$(MAKE) $(MAKESILENT) -f src/test/CMakeFiles/copycluster.dir/build.make src/test/CMakeFiles/copycluster.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/test/CMakeFiles/copycluster.dir/build.make src/test/CMakeFiles/copycluster.dir/build
@@ -716,10 +716,10 @@ src/test/CMakeFiles/copycluster.dir/clean:
 # Target rules for target src/test/CMakeFiles/parser.dir
 
 # All Build rule for target.
-src/test/CMakeFiles/parser.dir/all: src/libical/CMakeFiles/ical.dir/all
 src/test/CMakeFiles/parser.dir/all: src/libical/CMakeFiles/ical_cxx.dir/all
-src/test/CMakeFiles/parser.dir/all: src/libicalss/CMakeFiles/icalss.dir/all
+src/test/CMakeFiles/parser.dir/all: src/libical/CMakeFiles/ical.dir/all
 src/test/CMakeFiles/parser.dir/all: src/libicalvcal/CMakeFiles/icalvcal.dir/all
+src/test/CMakeFiles/parser.dir/all: src/libicalss/CMakeFiles/icalss.dir/all
 src/test/CMakeFiles/parser.dir/all: src/libicalss/CMakeFiles/icalss_cxx.dir/all
 	$(MAKE) $(MAKESILENT) -f src/test/CMakeFiles/parser.dir/build.make src/test/CMakeFiles/parser.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/test/CMakeFiles/parser.dir/build.make src/test/CMakeFiles/parser.dir/build
@@ -747,10 +747,10 @@ src/test/CMakeFiles/parser.dir/clean:
 # Target rules for target src/test/CMakeFiles/testvcal.dir
 
 # All Build rule for target.
-src/test/CMakeFiles/testvcal.dir/all: src/libical/CMakeFiles/ical.dir/all
 src/test/CMakeFiles/testvcal.dir/all: src/libical/CMakeFiles/ical_cxx.dir/all
-src/test/CMakeFiles/testvcal.dir/all: src/libicalss/CMakeFiles/icalss.dir/all
+src/test/CMakeFiles/testvcal.dir/all: src/libical/CMakeFiles/ical.dir/all
 src/test/CMakeFiles/testvcal.dir/all: src/libicalvcal/CMakeFiles/icalvcal.dir/all
+src/test/CMakeFiles/testvcal.dir/all: src/libicalss/CMakeFiles/icalss.dir/all
 src/test/CMakeFiles/testvcal.dir/all: src/libicalss/CMakeFiles/icalss_cxx.dir/all
 	$(MAKE) $(MAKESILENT) -f src/test/CMakeFiles/testvcal.dir/build.make src/test/CMakeFiles/testvcal.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/test/CMakeFiles/testvcal.dir/build.make src/test/CMakeFiles/testvcal.dir/build
@@ -778,10 +778,10 @@ src/test/CMakeFiles/testvcal.dir/clean:
 # Target rules for target src/test/CMakeFiles/icalrecur_test.dir
 
 # All Build rule for target.
-src/test/CMakeFiles/icalrecur_test.dir/all: src/libical/CMakeFiles/ical.dir/all
 src/test/CMakeFiles/icalrecur_test.dir/all: src/libical/CMakeFiles/ical_cxx.dir/all
-src/test/CMakeFiles/icalrecur_test.dir/all: src/libicalss/CMakeFiles/icalss.dir/all
+src/test/CMakeFiles/icalrecur_test.dir/all: src/libical/CMakeFiles/ical.dir/all
 src/test/CMakeFiles/icalrecur_test.dir/all: src/libicalvcal/CMakeFiles/icalvcal.dir/all
+src/test/CMakeFiles/icalrecur_test.dir/all: src/libicalss/CMakeFiles/icalss.dir/all
 src/test/CMakeFiles/icalrecur_test.dir/all: src/libicalss/CMakeFiles/icalss_cxx.dir/all
 	$(MAKE) $(MAKESILENT) -f src/test/CMakeFiles/icalrecur_test.dir/build.make src/test/CMakeFiles/icalrecur_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/test/CMakeFiles/icalrecur_test.dir/build.make src/test/CMakeFiles/icalrecur_test.dir/build
@@ -809,10 +809,10 @@ src/test/CMakeFiles/icalrecur_test.dir/clean:
 # Target rules for target src/test/CMakeFiles/testmime.dir
 
 # All Build rule for target.
-src/test/CMakeFiles/testmime.dir/all: src/libical/CMakeFiles/ical.dir/all
 src/test/CMakeFiles/testmime.dir/all: src/libical/CMakeFiles/ical_cxx.dir/all
-src/test/CMakeFiles/testmime.dir/all: src/libicalss/CMakeFiles/icalss.dir/all
+src/test/CMakeFiles/testmime.dir/all: src/libical/CMakeFiles/ical.dir/all
 src/test/CMakeFiles/testmime.dir/all: src/libicalvcal/CMakeFiles/icalvcal.dir/all
+src/test/CMakeFiles/testmime.dir/all: src/libicalss/CMakeFiles/icalss.dir/all
 src/test/CMakeFiles/testmime.dir/all: src/libicalss/CMakeFiles/icalss_cxx.dir/all
 	$(MAKE) $(MAKESILENT) -f src/test/CMakeFiles/testmime.dir/build.make src/test/CMakeFiles/testmime.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/test/CMakeFiles/testmime.dir/build.make src/test/CMakeFiles/testmime.dir/build
@@ -841,8 +841,8 @@ src/test/CMakeFiles/testmime.dir/clean:
 
 # All Build rule for target.
 examples/CMakeFiles/doesnothing.dir/all: src/libical/CMakeFiles/ical.dir/all
-examples/CMakeFiles/doesnothing.dir/all: src/libicalss/CMakeFiles/icalss.dir/all
 examples/CMakeFiles/doesnothing.dir/all: src/libicalvcal/CMakeFiles/icalvcal.dir/all
+examples/CMakeFiles/doesnothing.dir/all: src/libicalss/CMakeFiles/icalss.dir/all
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/doesnothing.dir/build.make examples/CMakeFiles/doesnothing.dir/depend
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/doesnothing.dir/build.make examples/CMakeFiles/doesnothing.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/D/Download/MinGW-64-souorce/libical-2.0.0/mingw64/CMakeFiles --progress-num=6,7,8,9,10,11 "Built target doesnothing"
