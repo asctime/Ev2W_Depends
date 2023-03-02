@@ -102,10 +102,17 @@ am__installdirs = "$(DESTDIR)$(libdir)" "$(DESTDIR)$(keybindingsdir)" \
 	"$(DESTDIR)$(pkgconfigdir)" "$(DESTDIR)$(libgtkhtmldir)"
 LTLIBRARIES = $(lib_LTLIBRARIES)
 am__DEPENDENCIES_1 =
-@ENABLE_GTK3_FALSE@libgtkhtml_3_14_la_DEPENDENCIES =  \
-@ENABLE_GTK3_FALSE@	$(am__DEPENDENCIES_1) \
-@ENABLE_GTK3_FALSE@	../a11y/libgtkhtml-a11y.la \
-@ENABLE_GTK3_FALSE@	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1)
+@ENABLE_GTK3_FALSE@@HAVE_GCONF_FALSE@libgtkhtml_3_14_la_DEPENDENCIES =  \
+@ENABLE_GTK3_FALSE@@HAVE_GCONF_FALSE@	$(am__DEPENDENCIES_1) \
+@ENABLE_GTK3_FALSE@@HAVE_GCONF_FALSE@	../a11y/libgtkhtml-a11y.la \
+@ENABLE_GTK3_FALSE@@HAVE_GCONF_FALSE@	$(am__DEPENDENCIES_1) \
+@ENABLE_GTK3_FALSE@@HAVE_GCONF_FALSE@	$(am__DEPENDENCIES_1)
+@ENABLE_GTK3_FALSE@@HAVE_GCONF_TRUE@libgtkhtml_3_14_la_DEPENDENCIES =  \
+@ENABLE_GTK3_FALSE@@HAVE_GCONF_TRUE@	$(am__DEPENDENCIES_1) \
+@ENABLE_GTK3_FALSE@@HAVE_GCONF_TRUE@	$(am__DEPENDENCIES_1) \
+@ENABLE_GTK3_FALSE@@HAVE_GCONF_TRUE@	../a11y/libgtkhtml-a11y.la \
+@ENABLE_GTK3_FALSE@@HAVE_GCONF_TRUE@	$(am__DEPENDENCIES_1) \
+@ENABLE_GTK3_FALSE@@HAVE_GCONF_TRUE@	$(am__DEPENDENCIES_1)
 am__libgtkhtml_3_14_la_SOURCES_DIST = gtkhtml-embedded.c \
 	gtkhtml-properties.c gtkhtml-search.c gtkhtml-stream.c \
 	gtkhtml.c gtkhtmldebug.c gtkhtmlfontstyle.c htmlanchor.c \
@@ -698,7 +705,8 @@ csources = \
 @ENABLE_GTK3_TRUE@libgtkhtml_4_0_la_LIBADD = $(GTKHTML_LIBS) ../a11y/libgtkhtml-a11y.la $(GAIL_LIBS) $(REGEX_LIBS)
 @ENABLE_GTK3_FALSE@libgtkhtml_3_14_la_SOURCES = $(csources)
 @ENABLE_GTK3_FALSE@libgtkhtml_3_14_la_LDFLAGS = -version-info $(GTKHTML_CURRENT):$(GTKHTML_REVISION):$(GTKHTML_AGE) -no-undefined
-@ENABLE_GTK3_FALSE@libgtkhtml_3_14_la_LIBADD = $(GTKHTML_LIBS) ../a11y/libgtkhtml-a11y.la $(GAIL_LIBS) $(REGEX_LIBS)
+@ENABLE_GTK3_FALSE@@HAVE_GCONF_FALSE@libgtkhtml_3_14_la_LIBADD = $(GTKHTML_LIBS) ../a11y/libgtkhtml-a11y.la $(GAIL_LIBS) $(REGEX_LIBS)
+@ENABLE_GTK3_FALSE@@HAVE_GCONF_TRUE@libgtkhtml_3_14_la_LIBADD = $(GTKHTML_LIBS) $(GCONF_LIBS) ../a11y/libgtkhtml-a11y.la $(GAIL_LIBS) -lfribidi $(REGEX_LIBS)
 @HAVE_SOUP_TRUE@test_programs = testgtkhtml
 testgtkhtml_SOURCES = \
 	testgtkhtml.c		\

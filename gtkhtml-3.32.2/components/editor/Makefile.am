@@ -74,7 +74,7 @@ else
 lib_LTLIBRARIES = libgtkhtml-editor-3.14.la
 libgtkhtml_editor_3_14_la_SOURCES = $(csources) 
 libgtkhtml_editor_3_14_la_LIBADD = \
-	@GTKHTML_LIBS@				\
+	@GTKHTML_LIBS@		\
 	$(top_builddir)/gtkhtml/libgtkhtml-@EDITOR_API_VERSION@.la
 libgtkhtml_editor_3_14_la_LDFLAGS = -no-undefined
 endif
@@ -82,7 +82,7 @@ endif
 gtkhtml_editor_test_SOURCES = main.c
 
 gtkhtml_editor_test_LDADD = \
-	@GTKHTML_LIBS@				\
+	-lgthread-2.0 @GTKHTML_LIBS@				\
 	libgtkhtml-editor-@EDITOR_API_VERSION@.la			\
 	$(top_builddir)/gtkhtml/libgtkhtml-@EDITOR_API_VERSION@.la
 

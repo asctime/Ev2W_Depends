@@ -216,7 +216,11 @@ else
 lib_LTLIBRARIES = libgtkhtml-3.14.la
 libgtkhtml_3_14_la_SOURCES = $(csources)
 libgtkhtml_3_14_la_LDFLAGS = -version-info $(GTKHTML_CURRENT):$(GTKHTML_REVISION):$(GTKHTML_AGE) -no-undefined
+if HAVE_GCONF
+libgtkhtml_3_14_la_LIBADD = $(GTKHTML_LIBS) $(GCONF_LIBS) ../a11y/libgtkhtml-a11y.la $(GAIL_LIBS) -lfribidi $(REGEX_LIBS)
+else
 libgtkhtml_3_14_la_LIBADD = $(GTKHTML_LIBS) ../a11y/libgtkhtml-a11y.la $(GAIL_LIBS) $(REGEX_LIBS)
+endif
 endif
 
 dist-hook:

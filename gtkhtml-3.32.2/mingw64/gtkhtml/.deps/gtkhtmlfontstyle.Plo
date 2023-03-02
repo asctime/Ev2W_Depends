@@ -1,7 +1,9 @@
-gtkhtmlfontstyle.lo : \
+-fstack-protector-strong -fasynchronous-unwind-tables gtkhtmlfontstyle.lo: \
  ../../gtkhtml/gtkhtmlfontstyle.c ../config.h \
  ../../gtkhtml/gtkhtmlfontstyle.h ../../gtkhtml/gtkhtml-enums.h
-../../gtkhtml/gtkhtmlfontstyle.c :
-../config.h :
-../../gtkhtml/gtkhtmlfontstyle.h :
-../../gtkhtml/gtkhtml-enums.h :
+
+../config.h:
+
+../../gtkhtml/gtkhtmlfontstyle.h:
+
+../../gtkhtml/gtkhtml-enums.h:

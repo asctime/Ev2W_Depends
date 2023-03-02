@@ -487,13 +487,13 @@ libgtkhtml_editor_HEADERS = \
 @ENABLE_GTK3_TRUE@libgtkhtml_editor_4_0_la_LDFLAGS = -no-undefined
 @ENABLE_GTK3_FALSE@libgtkhtml_editor_3_14_la_SOURCES = $(csources) 
 @ENABLE_GTK3_FALSE@libgtkhtml_editor_3_14_la_LIBADD = \
-@ENABLE_GTK3_FALSE@	@GTKHTML_LIBS@				\
+@ENABLE_GTK3_FALSE@	@GTKHTML_LIBS@		\
 @ENABLE_GTK3_FALSE@	$(top_builddir)/gtkhtml/libgtkhtml-@EDITOR_API_VERSION@.la
 
 @ENABLE_GTK3_FALSE@libgtkhtml_editor_3_14_la_LDFLAGS = -no-undefined
 gtkhtml_editor_test_SOURCES = main.c
 gtkhtml_editor_test_LDADD = \
-	@GTKHTML_LIBS@				\
+	-lgthread-2.0 @GTKHTML_LIBS@				\
 	libgtkhtml-editor-@EDITOR_API_VERSION@.la			\
 	$(top_builddir)/gtkhtml/libgtkhtml-@EDITOR_API_VERSION@.la
 

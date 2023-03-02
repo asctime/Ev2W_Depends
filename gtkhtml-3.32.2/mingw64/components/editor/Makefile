@@ -253,14 +253,14 @@ AWK = gawk
 CATALOGS = 
 CATOBJEXT = .gmo
 CC = gcc
-CCDEPMODE = depmode=gcc
-CFLAGS = -D__USE_MINGW_ANSI_STDIO=1 -D_POSIX_C_SOURCE -Wno-deprecated -Wno-deprecated-declarations -DGLIB_DISABLE_DEPRECATION_WARNINGS -O2 -pipe -mtune=sandybridge -fomit-frame-pointer -DWIN32 -DWIN64 -D_WIN32_WINNT=0x0501 -DWINVER=0x0501 -D_FORTIFY_SOURCE=2 -fstack-protector-strong -fasynchronous-unwind-tables -fexceptions   -DG_DISABLE_DEPRECATED -DPANGO_DISABLE_DEPRECATED -DGDK_PIXBUF_DISABLE_DEPRECATED -DGTK_DISABLE_DEPRECATED -DGNOME_DISABLE_DEPRECATED    -DG_DISABLE_SINGLE_INCLUDES -DGTK_DISABLE_SINGLE_INCLUDES -Wall -Wextra -Wno-missing-field-initializers -Wno-sign-compare -Wno-unused-parameter -Wdeclaration-after-statement -Werror-implicit-function-declaration -Wformat-nonliteral -Wformat-security -Winit-self -Wmissing-declarations -Wmissing-include-dirs -Wmissing-noreturn -Wnested-externs -Wpointer-arith -Wredundant-decls -Wundef -Wwrite-strings -fno-strict-aliasing
+CCDEPMODE = depmode=gcc3
+CFLAGS = -D__USE_MINGW_ANSI_STDIO=1 -D_POSIX_C_SOURCE -Wno-deprecated -Wno-deprecated-declarations -DGLIB_DISABLE_DEPRECATION_WARNINGS -O2 -mms-bitfields -pipe -mtune=sandybridge -fomit-frame-pointer -DWIN32 -DWIN64 -D_WIN32_WINNT=0x0501 -DWINVER=0x0501 -D_FORTIFY_SOURCE=2 -fstack-protector-strong -MD -MT -fasynchronous-unwind-tables -fexceptions   -DG_DISABLE_DEPRECATED -DPANGO_DISABLE_DEPRECATED -DGDK_PIXBUF_DISABLE_DEPRECATED -DGTK_DISABLE_DEPRECATED -DGNOME_DISABLE_DEPRECATED    -DG_DISABLE_SINGLE_INCLUDES -DGTK_DISABLE_SINGLE_INCLUDES -Wall -Wextra -Wno-missing-field-initializers -Wno-sign-compare -Wno-unused-parameter -Wdeclaration-after-statement -Werror-implicit-function-declaration -Wformat-nonliteral -Wformat-security -Winit-self -Wmissing-declarations -Wmissing-include-dirs -Wmissing-noreturn -Wnested-externs -Wpointer-arith -Wredundant-decls -Wundef -Wwrite-strings -fno-strict-aliasing
 CPP = gcc -E
-CPPFLAGS = -D__USE_MINGW_ANSI_STDIO=1 -D_POSIX_C_SOURCE -Wno-deprecated -Wno-deprecated-declarations -DGLIB_DISABLE_DEPRECATION_WARNINGS -O2 -pipe -fomit-frame-pointer -mtune=sandybridge -DWIN32 -DWIN64 -D_WIN32_WINNT=0x0501 -DWINVER=0x0501 -D_FORTIFY_SOURCE=2 -fstack-protector-strong -fasynchronous-unwind-tables -fexceptions
+CPPFLAGS = -D__USE_MINGW_ANSI_STDIO=1 -D_POSIX_C_SOURCE -Wno-deprecated -Wno-deprecated-declarations -DGLIB_DISABLE_DEPRECATION_WARNINGS -O2 -mms-bitfields -pipe -fomit-frame-pointer -mtune=sandybridge -DWIN32 -DWIN64 -D_WIN32_WINNT=0x0501 -DWINVER=0x0501 -D_FORTIFY_SOURCE=2 -MD -MT -fstack-protector-strong -fasynchronous-unwind-tables -fexceptions
 CXX = g++
 CXXCPP = g++ -E
-CXXDEPMODE = depmode=gcc
-CXXFLAGS = -D__USE_MINGW_ANSI_STDIO=1 -D_POSIX_C_SOURCE -D_FORTIFY_SOURCE=2 -Wno-deprecated -Wno-deprecated-declarations -DGLIB_DISABLE_DEPRECATION_WARNINGS -O2 -pipe -fomit-frame-pointer -mtune=sandybridge -DWIN32 -DWIN64 -D_WIN32_WINNT=0x0501 -DWINVER=0x0501 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -fasynchronous-unwind-tables -fexceptions
+CXXDEPMODE = depmode=gcc3
+CXXFLAGS = -D__USE_MINGW_ANSI_STDIO=1 -D_POSIX_C_SOURCE -D_FORTIFY_SOURCE=2 -Wno-deprecated -Wno-deprecated-declarations -DGLIB_DISABLE_DEPRECATION_WARNINGS -O2 -mms-bitfields -pipe -fomit-frame-pointer -mtune=sandybridge -DWIN32 -DWIN64 -D_WIN32_WINNT=0x0501 -DWINVER=0x0501 -MD -MT -fstack-protector-strong -D_FORTIFY_SOURCE=2 -fasynchronous-unwind-tables -fexceptions
 CYGPATH_W = cygpath -w
 DATADIRNAME = share
 DEFS = -DHAVE_CONFIG_H
@@ -310,7 +310,7 @@ INSTOBJEXT = .mo
 INTLLIBS = -lintl  
 INTLTOOL_EXTRACT = /usr/bin/intltool-extract
 INTLTOOL_MERGE = /usr/bin/intltool-merge
-INTLTOOL_PERL = /MSYS2/mingw64/bin/perl
+INTLTOOL_PERL = /usr/bin/perl
 INTLTOOL_UPDATE = /usr/bin/intltool-update
 INTL_MACOSX_LIBS = 
 LD = D:/MSYS2/mingw64/x86_64-w64-mingw32/bin/ld.exe
@@ -487,13 +487,13 @@ lib_LTLIBRARIES = libgtkhtml-editor-3.14.la
 #libgtkhtml_editor_4_0_la_LDFLAGS = -no-undefined
 libgtkhtml_editor_3_14_la_SOURCES = $(csources) 
 libgtkhtml_editor_3_14_la_LIBADD = \
-	-LD:/MSYS2/mingw64/bin/../lib -lgtk-win32-2.0 -lgdk-win32-2.0 -limm32 -lshell32 -lole32 -Wl,-luuid -lpangowin32-1.0 -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -lgdi32 -lmsimg32 -latk-1.0 -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -lgobject-2.0 -lenchant -lgmodule-2.0 -lglib-2.0 -lintl 				\
+	-LD:/MSYS2/mingw64/bin/../lib -lgtk-win32-2.0 -lgdk-win32-2.0 -limm32 -lshell32 -lole32 -Wl,-luuid -lpangowin32-1.0 -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -lgdi32 -lmsimg32 -latk-1.0 -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -lgobject-2.0 -lenchant -lgmodule-2.0 -lglib-2.0 -lintl 		\
 	$(top_builddir)/gtkhtml/libgtkhtml-3.14.la
 
 libgtkhtml_editor_3_14_la_LDFLAGS = -no-undefined
 gtkhtml_editor_test_SOURCES = main.c
 gtkhtml_editor_test_LDADD = \
-	-LD:/MSYS2/mingw64/bin/../lib -lgtk-win32-2.0 -lgdk-win32-2.0 -lgthread-2.0 -limm32 -lshell32 -lole32 -Wl,-luuid -lpangowin32-1.0 -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -lgdi32 -lmsimg32 -latk-1.0 -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -lgobject-2.0 -lenchant -lgmodule-2.0 -lglib-2.0 -lintl 				\
+	-lgthread-2.0 -LD:/MSYS2/mingw64/bin/../lib -lgtk-win32-2.0 -lgdk-win32-2.0 -limm32 -lshell32 -lole32 -Wl,-luuid -lpangowin32-1.0 -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -lgdi32 -lmsimg32 -latk-1.0 -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -lgobject-2.0 -lenchant -lgmodule-2.0 -lglib-2.0 -lintl 				\
 	libgtkhtml-editor-3.14.la			\
 	$(top_builddir)/gtkhtml/libgtkhtml-3.14.la
 
@@ -717,60 +717,60 @@ include ./$(DEPDIR)/libglade_gtkhtml_editor_la-gtkhtml-combo-box.Plo
 include ./$(DEPDIR)/main.Po
 
 .c.o:
-#	$(AM_V_CC)$(COMPILE) -MT $@ -MD -MP -MF $(DEPDIR)/$*.Tpo -c -o $@ $<
-#	$(AM_V_at)$(am__mv) $(DEPDIR)/$*.Tpo $(DEPDIR)/$*.Po
-	$(AM_V_CC)source='$<' object='$@' libtool=no \
-	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
-	$(AM_V_CC_no)$(COMPILE) -c $<
+	$(AM_V_CC)$(COMPILE) -MT $@ -MD -MP -MF $(DEPDIR)/$*.Tpo -c -o $@ $<
+	$(AM_V_at)$(am__mv) $(DEPDIR)/$*.Tpo $(DEPDIR)/$*.Po
+#	$(AM_V_CC)source='$<' object='$@' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
+#	$(AM_V_CC_no)$(COMPILE) -c $<
 
 .c.obj:
-#	$(AM_V_CC)$(COMPILE) -MT $@ -MD -MP -MF $(DEPDIR)/$*.Tpo -c -o $@ `$(CYGPATH_W) '$<'`
-#	$(AM_V_at)$(am__mv) $(DEPDIR)/$*.Tpo $(DEPDIR)/$*.Po
-	$(AM_V_CC)source='$<' object='$@' libtool=no \
-	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
-	$(AM_V_CC_no)$(COMPILE) -c `$(CYGPATH_W) '$<'`
+	$(AM_V_CC)$(COMPILE) -MT $@ -MD -MP -MF $(DEPDIR)/$*.Tpo -c -o $@ `$(CYGPATH_W) '$<'`
+	$(AM_V_at)$(am__mv) $(DEPDIR)/$*.Tpo $(DEPDIR)/$*.Po
+#	$(AM_V_CC)source='$<' object='$@' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
+#	$(AM_V_CC_no)$(COMPILE) -c `$(CYGPATH_W) '$<'`
 
 .c.lo:
-#	$(AM_V_CC)$(LTCOMPILE) -MT $@ -MD -MP -MF $(DEPDIR)/$*.Tpo -c -o $@ $<
-#	$(AM_V_at)$(am__mv) $(DEPDIR)/$*.Tpo $(DEPDIR)/$*.Plo
-	$(AM_V_CC)source='$<' object='$@' libtool=yes \
-	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
-	$(AM_V_CC_no)$(LTCOMPILE) -c -o $@ $<
+	$(AM_V_CC)$(LTCOMPILE) -MT $@ -MD -MP -MF $(DEPDIR)/$*.Tpo -c -o $@ $<
+	$(AM_V_at)$(am__mv) $(DEPDIR)/$*.Tpo $(DEPDIR)/$*.Plo
+#	$(AM_V_CC)source='$<' object='$@' libtool=yes \
+#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
+#	$(AM_V_CC_no)$(LTCOMPILE) -c -o $@ $<
 
 libglade_gtkhtml_editor_la-gtkhtml-color-combo.lo: gtkhtml-color-combo.c
-#	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libglade_gtkhtml_editor_la_CFLAGS) $(CFLAGS) -MT libglade_gtkhtml_editor_la-gtkhtml-color-combo.lo -MD -MP -MF $(DEPDIR)/libglade_gtkhtml_editor_la-gtkhtml-color-combo.Tpo -c -o libglade_gtkhtml_editor_la-gtkhtml-color-combo.lo `test -f 'gtkhtml-color-combo.c' || echo '$(srcdir)/'`gtkhtml-color-combo.c
-#	$(AM_V_at)$(am__mv) $(DEPDIR)/libglade_gtkhtml_editor_la-gtkhtml-color-combo.Tpo $(DEPDIR)/libglade_gtkhtml_editor_la-gtkhtml-color-combo.Plo
-	$(AM_V_CC)source='gtkhtml-color-combo.c' object='libglade_gtkhtml_editor_la-gtkhtml-color-combo.lo' libtool=yes \
-	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
-	$(AM_V_CC_no)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libglade_gtkhtml_editor_la_CFLAGS) $(CFLAGS) -c -o libglade_gtkhtml_editor_la-gtkhtml-color-combo.lo `test -f 'gtkhtml-color-combo.c' || echo '$(srcdir)/'`gtkhtml-color-combo.c
+	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libglade_gtkhtml_editor_la_CFLAGS) $(CFLAGS) -MT libglade_gtkhtml_editor_la-gtkhtml-color-combo.lo -MD -MP -MF $(DEPDIR)/libglade_gtkhtml_editor_la-gtkhtml-color-combo.Tpo -c -o libglade_gtkhtml_editor_la-gtkhtml-color-combo.lo `test -f 'gtkhtml-color-combo.c' || echo '$(srcdir)/'`gtkhtml-color-combo.c
+	$(AM_V_at)$(am__mv) $(DEPDIR)/libglade_gtkhtml_editor_la-gtkhtml-color-combo.Tpo $(DEPDIR)/libglade_gtkhtml_editor_la-gtkhtml-color-combo.Plo
+#	$(AM_V_CC)source='gtkhtml-color-combo.c' object='libglade_gtkhtml_editor_la-gtkhtml-color-combo.lo' libtool=yes \
+#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
+#	$(AM_V_CC_no)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libglade_gtkhtml_editor_la_CFLAGS) $(CFLAGS) -c -o libglade_gtkhtml_editor_la-gtkhtml-color-combo.lo `test -f 'gtkhtml-color-combo.c' || echo '$(srcdir)/'`gtkhtml-color-combo.c
 
 libglade_gtkhtml_editor_la-gtkhtml-color-palette.lo: gtkhtml-color-palette.c
-#	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libglade_gtkhtml_editor_la_CFLAGS) $(CFLAGS) -MT libglade_gtkhtml_editor_la-gtkhtml-color-palette.lo -MD -MP -MF $(DEPDIR)/libglade_gtkhtml_editor_la-gtkhtml-color-palette.Tpo -c -o libglade_gtkhtml_editor_la-gtkhtml-color-palette.lo `test -f 'gtkhtml-color-palette.c' || echo '$(srcdir)/'`gtkhtml-color-palette.c
-#	$(AM_V_at)$(am__mv) $(DEPDIR)/libglade_gtkhtml_editor_la-gtkhtml-color-palette.Tpo $(DEPDIR)/libglade_gtkhtml_editor_la-gtkhtml-color-palette.Plo
-	$(AM_V_CC)source='gtkhtml-color-palette.c' object='libglade_gtkhtml_editor_la-gtkhtml-color-palette.lo' libtool=yes \
-	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
-	$(AM_V_CC_no)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libglade_gtkhtml_editor_la_CFLAGS) $(CFLAGS) -c -o libglade_gtkhtml_editor_la-gtkhtml-color-palette.lo `test -f 'gtkhtml-color-palette.c' || echo '$(srcdir)/'`gtkhtml-color-palette.c
+	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libglade_gtkhtml_editor_la_CFLAGS) $(CFLAGS) -MT libglade_gtkhtml_editor_la-gtkhtml-color-palette.lo -MD -MP -MF $(DEPDIR)/libglade_gtkhtml_editor_la-gtkhtml-color-palette.Tpo -c -o libglade_gtkhtml_editor_la-gtkhtml-color-palette.lo `test -f 'gtkhtml-color-palette.c' || echo '$(srcdir)/'`gtkhtml-color-palette.c
+	$(AM_V_at)$(am__mv) $(DEPDIR)/libglade_gtkhtml_editor_la-gtkhtml-color-palette.Tpo $(DEPDIR)/libglade_gtkhtml_editor_la-gtkhtml-color-palette.Plo
+#	$(AM_V_CC)source='gtkhtml-color-palette.c' object='libglade_gtkhtml_editor_la-gtkhtml-color-palette.lo' libtool=yes \
+#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
+#	$(AM_V_CC_no)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libglade_gtkhtml_editor_la_CFLAGS) $(CFLAGS) -c -o libglade_gtkhtml_editor_la-gtkhtml-color-palette.lo `test -f 'gtkhtml-color-palette.c' || echo '$(srcdir)/'`gtkhtml-color-palette.c
 
 libglade_gtkhtml_editor_la-gtkhtml-color-state.lo: gtkhtml-color-state.c
-#	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libglade_gtkhtml_editor_la_CFLAGS) $(CFLAGS) -MT libglade_gtkhtml_editor_la-gtkhtml-color-state.lo -MD -MP -MF $(DEPDIR)/libglade_gtkhtml_editor_la-gtkhtml-color-state.Tpo -c -o libglade_gtkhtml_editor_la-gtkhtml-color-state.lo `test -f 'gtkhtml-color-state.c' || echo '$(srcdir)/'`gtkhtml-color-state.c
-#	$(AM_V_at)$(am__mv) $(DEPDIR)/libglade_gtkhtml_editor_la-gtkhtml-color-state.Tpo $(DEPDIR)/libglade_gtkhtml_editor_la-gtkhtml-color-state.Plo
-	$(AM_V_CC)source='gtkhtml-color-state.c' object='libglade_gtkhtml_editor_la-gtkhtml-color-state.lo' libtool=yes \
-	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
-	$(AM_V_CC_no)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libglade_gtkhtml_editor_la_CFLAGS) $(CFLAGS) -c -o libglade_gtkhtml_editor_la-gtkhtml-color-state.lo `test -f 'gtkhtml-color-state.c' || echo '$(srcdir)/'`gtkhtml-color-state.c
+	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libglade_gtkhtml_editor_la_CFLAGS) $(CFLAGS) -MT libglade_gtkhtml_editor_la-gtkhtml-color-state.lo -MD -MP -MF $(DEPDIR)/libglade_gtkhtml_editor_la-gtkhtml-color-state.Tpo -c -o libglade_gtkhtml_editor_la-gtkhtml-color-state.lo `test -f 'gtkhtml-color-state.c' || echo '$(srcdir)/'`gtkhtml-color-state.c
+	$(AM_V_at)$(am__mv) $(DEPDIR)/libglade_gtkhtml_editor_la-gtkhtml-color-state.Tpo $(DEPDIR)/libglade_gtkhtml_editor_la-gtkhtml-color-state.Plo
+#	$(AM_V_CC)source='gtkhtml-color-state.c' object='libglade_gtkhtml_editor_la-gtkhtml-color-state.lo' libtool=yes \
+#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
+#	$(AM_V_CC_no)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libglade_gtkhtml_editor_la_CFLAGS) $(CFLAGS) -c -o libglade_gtkhtml_editor_la-gtkhtml-color-state.lo `test -f 'gtkhtml-color-state.c' || echo '$(srcdir)/'`gtkhtml-color-state.c
 
 libglade_gtkhtml_editor_la-gtkhtml-color-swatch.lo: gtkhtml-color-swatch.c
-#	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libglade_gtkhtml_editor_la_CFLAGS) $(CFLAGS) -MT libglade_gtkhtml_editor_la-gtkhtml-color-swatch.lo -MD -MP -MF $(DEPDIR)/libglade_gtkhtml_editor_la-gtkhtml-color-swatch.Tpo -c -o libglade_gtkhtml_editor_la-gtkhtml-color-swatch.lo `test -f 'gtkhtml-color-swatch.c' || echo '$(srcdir)/'`gtkhtml-color-swatch.c
-#	$(AM_V_at)$(am__mv) $(DEPDIR)/libglade_gtkhtml_editor_la-gtkhtml-color-swatch.Tpo $(DEPDIR)/libglade_gtkhtml_editor_la-gtkhtml-color-swatch.Plo
-	$(AM_V_CC)source='gtkhtml-color-swatch.c' object='libglade_gtkhtml_editor_la-gtkhtml-color-swatch.lo' libtool=yes \
-	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
-	$(AM_V_CC_no)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libglade_gtkhtml_editor_la_CFLAGS) $(CFLAGS) -c -o libglade_gtkhtml_editor_la-gtkhtml-color-swatch.lo `test -f 'gtkhtml-color-swatch.c' || echo '$(srcdir)/'`gtkhtml-color-swatch.c
+	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libglade_gtkhtml_editor_la_CFLAGS) $(CFLAGS) -MT libglade_gtkhtml_editor_la-gtkhtml-color-swatch.lo -MD -MP -MF $(DEPDIR)/libglade_gtkhtml_editor_la-gtkhtml-color-swatch.Tpo -c -o libglade_gtkhtml_editor_la-gtkhtml-color-swatch.lo `test -f 'gtkhtml-color-swatch.c' || echo '$(srcdir)/'`gtkhtml-color-swatch.c
+	$(AM_V_at)$(am__mv) $(DEPDIR)/libglade_gtkhtml_editor_la-gtkhtml-color-swatch.Tpo $(DEPDIR)/libglade_gtkhtml_editor_la-gtkhtml-color-swatch.Plo
+#	$(AM_V_CC)source='gtkhtml-color-swatch.c' object='libglade_gtkhtml_editor_la-gtkhtml-color-swatch.lo' libtool=yes \
+#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
+#	$(AM_V_CC_no)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libglade_gtkhtml_editor_la_CFLAGS) $(CFLAGS) -c -o libglade_gtkhtml_editor_la-gtkhtml-color-swatch.lo `test -f 'gtkhtml-color-swatch.c' || echo '$(srcdir)/'`gtkhtml-color-swatch.c
 
 libglade_gtkhtml_editor_la-gtkhtml-combo-box.lo: gtkhtml-combo-box.c
-#	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libglade_gtkhtml_editor_la_CFLAGS) $(CFLAGS) -MT libglade_gtkhtml_editor_la-gtkhtml-combo-box.lo -MD -MP -MF $(DEPDIR)/libglade_gtkhtml_editor_la-gtkhtml-combo-box.Tpo -c -o libglade_gtkhtml_editor_la-gtkhtml-combo-box.lo `test -f 'gtkhtml-combo-box.c' || echo '$(srcdir)/'`gtkhtml-combo-box.c
-#	$(AM_V_at)$(am__mv) $(DEPDIR)/libglade_gtkhtml_editor_la-gtkhtml-combo-box.Tpo $(DEPDIR)/libglade_gtkhtml_editor_la-gtkhtml-combo-box.Plo
-	$(AM_V_CC)source='gtkhtml-combo-box.c' object='libglade_gtkhtml_editor_la-gtkhtml-combo-box.lo' libtool=yes \
-	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
-	$(AM_V_CC_no)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libglade_gtkhtml_editor_la_CFLAGS) $(CFLAGS) -c -o libglade_gtkhtml_editor_la-gtkhtml-combo-box.lo `test -f 'gtkhtml-combo-box.c' || echo '$(srcdir)/'`gtkhtml-combo-box.c
+	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libglade_gtkhtml_editor_la_CFLAGS) $(CFLAGS) -MT libglade_gtkhtml_editor_la-gtkhtml-combo-box.lo -MD -MP -MF $(DEPDIR)/libglade_gtkhtml_editor_la-gtkhtml-combo-box.Tpo -c -o libglade_gtkhtml_editor_la-gtkhtml-combo-box.lo `test -f 'gtkhtml-combo-box.c' || echo '$(srcdir)/'`gtkhtml-combo-box.c
+	$(AM_V_at)$(am__mv) $(DEPDIR)/libglade_gtkhtml_editor_la-gtkhtml-combo-box.Tpo $(DEPDIR)/libglade_gtkhtml_editor_la-gtkhtml-combo-box.Plo
+#	$(AM_V_CC)source='gtkhtml-combo-box.c' object='libglade_gtkhtml_editor_la-gtkhtml-combo-box.lo' libtool=yes \
+#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
+#	$(AM_V_CC_no)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libglade_gtkhtml_editor_la_CFLAGS) $(CFLAGS) -c -o libglade_gtkhtml_editor_la-gtkhtml-combo-box.lo `test -f 'gtkhtml-combo-box.c' || echo '$(srcdir)/'`gtkhtml-combo-box.c
 
 mostlyclean-libtool:
 	-rm -f *.lo
