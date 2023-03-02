@@ -27,7 +27,7 @@
 #define GTK_HTML_GNOME_CONFIG_PREFIX "/gtkhtml/Settings/"
 
 #include <gtk/gtk.h>
-#ifdef HAVE_GCONF
+#if defined(GCONF_GCONF_H) || defined(HAVE_GCONF) /* try to autodetect */
 #include <gconf/gconf-client.h>
 #else
 typedef void* GConfClient;
