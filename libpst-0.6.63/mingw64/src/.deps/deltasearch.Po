@@ -1,4 +1,5 @@
-deltasearch.o: ../../src/deltasearch.cpp ../../src/define.h ../config.h \
+-fstack-protector-strong -fstack-protector-strong deltasearch.o: \
+ ../../src/deltasearch.cpp ../../src/define.h ../config.h \
  ../../src/libpst.h ../../src/common.h \
  D:/MSYS2/mingw64/include/c++/8.3.0/stdlib.h \
  D:/MSYS2/mingw64/include/c++/8.3.0/cstdlib \
@@ -32,7 +33,7 @@ deltasearch.o: ../../src/deltasearch.cpp ../../src/define.h ../config.h \
  D:/MSYS2/mingw64/x86_64-w64-mingw32/include/_timeval.h \
  D:/MSYS2/mingw64/x86_64-w64-mingw32/include/sys/timeb.h \
  D:/MSYS2/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
- D:/MSYS2/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
+ D:/MSYS2/mingw64/include/pthread_time.h \
  D:/MSYS2/mingw64/lib/gcc/x86_64-w64-mingw32/8.3.0/include/stdint.h \
  D:/MSYS2/mingw64/x86_64-w64-mingw32/include/stdint.h \
  D:/MSYS2/mingw64/lib/gcc/x86_64-w64-mingw32/8.3.0/include/stddef.h \
@@ -249,7 +250,7 @@ deltasearch.o: ../../src/deltasearch.cpp ../../src/define.h ../config.h \
  D:/MSYS2/mingw64/x86_64-w64-mingw32/include/_mingw_stat64.h \
  D:/MSYS2/mingw64/x86_64-w64-mingw32/include/sec_api/wchar_s.h \
  D:/MSYS2/mingw64/x86_64-w64-mingw32/include/signal.h \
- D:/MSYS2/mingw64/x86_64-w64-mingw32/include/pthread_signal.h \
+ D:/MSYS2/mingw64/include/pthread_signal.h \
  D:/MSYS2/mingw64/x86_64-w64-mingw32/include/errno.h \
  D:/MSYS2/mingw64/include/iconv.h D:/MSYS2/mingw64/include/regex.h \
  D:/MSYS2/mingw64/x86_64-w64-mingw32/include/sys/types.h \
@@ -262,7 +263,7 @@ deltasearch.o: ../../src/deltasearch.cpp ../../src/define.h ../config.h \
  D:/MSYS2/mingw64/x86_64-w64-mingw32/include/corecrt_startup.h \
  D:/MSYS2/mingw64/x86_64-w64-mingw32/include/sys/stat.h \
  D:/MSYS2/mingw64/x86_64-w64-mingw32/include/dirent.h \
- D:/MSYS2/mingw64/x86_64-w64-mingw32/include/semaphore.h \
+ D:/MSYS2/mingw64/include/semaphore.h \
  D:/MSYS2/mingw64/x86_64-w64-mingw32/include/fcntl.h \
  D:/MSYS2/mingw64/include/c++/8.3.0/iostream \
  D:/MSYS2/mingw64/include/c++/8.3.0/ostream \
@@ -308,9 +309,9 @@ deltasearch.o: ../../src/deltasearch.cpp ../../src/define.h ../config.h \
  D:/MSYS2/mingw64/include/c++/8.3.0/ext/atomicity.h \
  D:/MSYS2/mingw64/include/c++/8.3.0/x86_64-w64-mingw32/bits/gthr.h \
  D:/MSYS2/mingw64/include/c++/8.3.0/x86_64-w64-mingw32/bits/gthr-default.h \
- D:/MSYS2/mingw64/x86_64-w64-mingw32/include/pthread.h \
- D:/MSYS2/mingw64/x86_64-w64-mingw32/include/pthread_compat.h \
- D:/MSYS2/mingw64/x86_64-w64-mingw32/include/pthread_unistd.h \
+ D:/MSYS2/mingw64/include/pthread.h \
+ D:/MSYS2/mingw64/include/pthread_compat.h \
+ D:/MSYS2/mingw64/include/pthread_unistd.h \
  D:/MSYS2/mingw64/include/c++/8.3.0/x86_64-w64-mingw32/bits/atomic_word.h \
  D:/MSYS2/mingw64/include/c++/8.3.0/bits/locale_classes.h \
  D:/MSYS2/mingw64/include/c++/8.3.0/string \
@@ -428,7 +429,7 @@ D:/MSYS2/mingw64/x86_64-w64-mingw32/include/sys/timeb.h:
 
 D:/MSYS2/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h:
 
-D:/MSYS2/mingw64/x86_64-w64-mingw32/include/pthread_time.h:
+D:/MSYS2/mingw64/include/pthread_time.h:
 
 D:/MSYS2/mingw64/lib/gcc/x86_64-w64-mingw32/8.3.0/include/stdint.h:
 
@@ -866,7 +867,7 @@ D:/MSYS2/mingw64/x86_64-w64-mingw32/include/sec_api/wchar_s.h:
 
 D:/MSYS2/mingw64/x86_64-w64-mingw32/include/signal.h:
 
-D:/MSYS2/mingw64/x86_64-w64-mingw32/include/pthread_signal.h:
+D:/MSYS2/mingw64/include/pthread_signal.h:
 
 D:/MSYS2/mingw64/x86_64-w64-mingw32/include/errno.h:
 
@@ -896,7 +897,7 @@ D:/MSYS2/mingw64/x86_64-w64-mingw32/include/sys/stat.h:
 
 D:/MSYS2/mingw64/x86_64-w64-mingw32/include/dirent.h:
 
-D:/MSYS2/mingw64/x86_64-w64-mingw32/include/semaphore.h:
+D:/MSYS2/mingw64/include/semaphore.h:
 
 D:/MSYS2/mingw64/x86_64-w64-mingw32/include/fcntl.h:
 
@@ -988,11 +989,11 @@ D:/MSYS2/mingw64/include/c++/8.3.0/x86_64-w64-mingw32/bits/gthr.h:
 
 D:/MSYS2/mingw64/include/c++/8.3.0/x86_64-w64-mingw32/bits/gthr-default.h:
 
-D:/MSYS2/mingw64/x86_64-w64-mingw32/include/pthread.h:
+D:/MSYS2/mingw64/include/pthread.h:
 
-D:/MSYS2/mingw64/x86_64-w64-mingw32/include/pthread_compat.h:
+D:/MSYS2/mingw64/include/pthread_compat.h:
 
-D:/MSYS2/mingw64/x86_64-w64-mingw32/include/pthread_unistd.h:
+D:/MSYS2/mingw64/include/pthread_unistd.h:
 
 D:/MSYS2/mingw64/include/c++/8.3.0/x86_64-w64-mingw32/bits/atomic_word.h:
 

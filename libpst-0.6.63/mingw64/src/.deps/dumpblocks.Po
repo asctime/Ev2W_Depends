@@ -1,6 +1,6 @@
-dumpblocks.o: ../../src/dumpblocks.c ../../src/define.h ../config.h \
- ../../src/libpst.h ../../src/common.h \
- D:/MSYS2/mingw64/x86_64-w64-mingw32/include/stdlib.h \
+-fstack-protector-strong -fasynchronous-unwind-tables dumpblocks.o: \
+ ../../src/dumpblocks.c ../../src/define.h ../config.h ../../src/libpst.h \
+ ../../src/common.h D:/MSYS2/mingw64/x86_64-w64-mingw32/include/stdlib.h \
  D:/MSYS2/mingw64/x86_64-w64-mingw32/include/corecrt.h \
  D:/MSYS2/mingw64/x86_64-w64-mingw32/include/_mingw.h \
  D:/MSYS2/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
@@ -26,7 +26,7 @@ dumpblocks.o: ../../src/dumpblocks.c ../../src/define.h ../config.h \
  D:/MSYS2/mingw64/x86_64-w64-mingw32/include/_timeval.h \
  D:/MSYS2/mingw64/x86_64-w64-mingw32/include/sys/timeb.h \
  D:/MSYS2/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
- D:/MSYS2/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
+ D:/MSYS2/mingw64/include/pthread_time.h \
  D:/MSYS2/mingw64/lib/gcc/x86_64-w64-mingw32/8.3.0/include/stdint.h \
  D:/MSYS2/mingw64/x86_64-w64-mingw32/include/stdint.h \
  D:/MSYS2/mingw64/lib/gcc/x86_64-w64-mingw32/8.3.0/include/stddef.h \
@@ -243,7 +243,7 @@ dumpblocks.o: ../../src/dumpblocks.c ../../src/define.h ../config.h \
  D:/MSYS2/mingw64/x86_64-w64-mingw32/include/_mingw_stat64.h \
  D:/MSYS2/mingw64/x86_64-w64-mingw32/include/sec_api/wchar_s.h \
  D:/MSYS2/mingw64/x86_64-w64-mingw32/include/signal.h \
- D:/MSYS2/mingw64/x86_64-w64-mingw32/include/pthread_signal.h \
+ D:/MSYS2/mingw64/include/pthread_signal.h \
  D:/MSYS2/mingw64/x86_64-w64-mingw32/include/errno.h \
  D:/MSYS2/mingw64/include/iconv.h D:/MSYS2/mingw64/include/regex.h \
  D:/MSYS2/mingw64/x86_64-w64-mingw32/include/sys/types.h \
@@ -256,7 +256,7 @@ dumpblocks.o: ../../src/dumpblocks.c ../../src/define.h ../config.h \
  D:/MSYS2/mingw64/x86_64-w64-mingw32/include/corecrt_startup.h \
  D:/MSYS2/mingw64/x86_64-w64-mingw32/include/sys/stat.h \
  D:/MSYS2/mingw64/x86_64-w64-mingw32/include/dirent.h \
- D:/MSYS2/mingw64/x86_64-w64-mingw32/include/semaphore.h
+ D:/MSYS2/mingw64/include/semaphore.h
 
 ../../src/define.h:
 
@@ -318,7 +318,7 @@ D:/MSYS2/mingw64/x86_64-w64-mingw32/include/sys/timeb.h:
 
 D:/MSYS2/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h:
 
-D:/MSYS2/mingw64/x86_64-w64-mingw32/include/pthread_time.h:
+D:/MSYS2/mingw64/include/pthread_time.h:
 
 D:/MSYS2/mingw64/lib/gcc/x86_64-w64-mingw32/8.3.0/include/stdint.h:
 
@@ -756,7 +756,7 @@ D:/MSYS2/mingw64/x86_64-w64-mingw32/include/sec_api/wchar_s.h:
 
 D:/MSYS2/mingw64/x86_64-w64-mingw32/include/signal.h:
 
-D:/MSYS2/mingw64/x86_64-w64-mingw32/include/pthread_signal.h:
+D:/MSYS2/mingw64/include/pthread_signal.h:
 
 D:/MSYS2/mingw64/x86_64-w64-mingw32/include/errno.h:
 
@@ -786,4 +786,4 @@ D:/MSYS2/mingw64/x86_64-w64-mingw32/include/sys/stat.h:
 
 D:/MSYS2/mingw64/x86_64-w64-mingw32/include/dirent.h:
 
-D:/MSYS2/mingw64/x86_64-w64-mingw32/include/semaphore.h:
+D:/MSYS2/mingw64/include/semaphore.h:

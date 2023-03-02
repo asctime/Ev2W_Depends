@@ -124,8 +124,8 @@ libpst_la_OBJECTS = $(am_libpst_la_OBJECTS)
 libpst_la_LINK = $(LIBTOOL) --tag=CC $(AM_LIBTOOLFLAGS) \
 	$(LIBTOOLFLAGS) --mode=link $(CCLD) $(AM_CFLAGS) $(CFLAGS) \
 	$(libpst_la_LDFLAGS) $(LDFLAGS) -o $@
-#am_libpst_la_rpath = -rpath $(libdir)
-am_libpst_la_rpath =
+am_libpst_la_rpath = -rpath $(libdir)
+#am_libpst_la_rpath =
 am__EXEEXT_1 = pst2dii$(EXEEXT)
 PROGRAMS = $(bin_PROGRAMS) $(noinst_PROGRAMS)
 am__deltasearch_SOURCES_DIST = deltasearch.cpp common.h define.h \
@@ -213,14 +213,14 @@ AWK = gawk
 BOOST_PYTHON_LIB = 
 CC = gcc
 CCDEPMODE = depmode=gcc3
-CFLAGS = -D__USE_MINGW_ANSI_STDIO=1 -O2 -pipe -mtune=generic -fomit-frame-pointer -DWIN32 -DWIN64 -D_WIN32_WINNT=0x0501 -DWINVER=0x0501
+CFLAGS = -D__USE_MINGW_ANSI_STDIO=1 -D_POSIX_C_SOURCE -Wno-deprecated -Wno-deprecated-declarations -DGLIB_DISABLE_DEPRECATION_WARNINGS -O2 -mms-bitfields -pipe -mtune=sandybridge -fomit-frame-pointer -DWIN32 -DWIN64 -D_WIN32_WINNT=0x0501 -DWINVER=0x0501 -D_FORTIFY_SOURCE=2 -fstack-protector-strong -MD -MT -fasynchronous-unwind-tables -fexceptions
 CONVERT = /MSYS2/mingw64/bin/convert
 CPP = gcc -E
-CPPFLAGS = -D__USE_MINGW_ANSI_STDIO=1 -O2 -pipe -fomit-frame-pointer -mtune=generic -DWIN32 -DWIN64 -D_WIN32_WINNT=0x0501 -DWINVER=0x0501 -I/MSYS2/mingw64/include
+CPPFLAGS = -D__USE_MINGW_ANSI_STDIO=1 -D_POSIX_C_SOURCE -Wno-deprecated -Wno-deprecated-declarations -DGLIB_DISABLE_DEPRECATION_WARNINGS -O2 -mms-bitfields -pipe -fomit-frame-pointer -mtune=sandybridge -DWIN32 -DWIN64 -D_WIN32_WINNT=0x0501 -DWINVER=0x0501 -D_FORTIFY_SOURCE=2 -MD -MT -fstack-protector-strong -fasynchronous-unwind-tables -fexceptions -I/MSYS2/mingw64/include
 CXX = g++
 CXXCPP = g++ -E
 CXXDEPMODE = depmode=gcc3
-CXXFLAGS = -D__USE_MINGW_ANSI_STDIO=1 -O2 -pipe -fomit-frame-pointer -mtune=generic -DWIN32 -DWIN64 -D_WIN32_WINNT=0x0501 -DWINVER=0x0501
+CXXFLAGS = -D__USE_MINGW_ANSI_STDIO=1 -D_POSIX_C_SOURCE -D_FORTIFY_SOURCE=2 -Wno-deprecated -Wno-deprecated-declarations -DGLIB_DISABLE_DEPRECATION_WARNINGS -O2 -mms-bitfields -pipe -fomit-frame-pointer -mtune=sandybridge -DWIN32 -DWIN64 -D_WIN32_WINNT=0x0501 -DWINVER=0x0501 -MD -MT -fstack-protector-strong -D_FORTIFY_SOURCE=2 -fasynchronous-unwind-tables -fexceptions
 CYGPATH_W = cygpath -w
 DEFS = -DHAVE_CONFIG_H
 DEPDIR = .deps
@@ -247,7 +247,7 @@ LIBICONV = /MSYS2/mingw64/lib/libiconv.a
 LIBOBJS =  ${LIBOBJDIR}lstat$U.o ${LIBOBJDIR}mktime$U.o
 LIBPST_SO_MAJOR = 4
 LIBPST_VERSION_INFO = 5:10:1
-LIBS = -lz -lws2_32 -lregex -lversion
+LIBS = -lz -lws2_32 -lregex -lversion -lssp
 LIBTOOL = $(SHELL) $(top_builddir)/libtool
 LIPO = 
 LN_S = cp -pR
@@ -345,8 +345,8 @@ top_srcdir = ../..
 #NO_UNDEFINED = 
 NO_UNDEFINED = -no-undefined
 #AM_CFLAGS = -D_POSIX_PTHREAD_SEMANTICS
-#PSTLIB = libpst.la
-PSTLIB = .libs/libpst.a
+PSTLIB = libpst.la
+#PSTLIB = .libs/libpst.a
 common_header = common.h define.h libpst.h libstrfunc.h lzfu.h \
 	timeconv.h vbuf.h $(am__append_2)
 common_source = debug.c libpst.c libstrfunc.c lzfu.c timeconv.c vbuf.c \
@@ -368,18 +368,18 @@ deltasearch_DEPENDENCIES = libpst.la
 dumpblocks_DEPENDENCIES = libpst.la
 getidblock_DEPENDENCIES = libpst.la
 nick2ldif_DEPENDENCIES = libpst.la
-noinst_LTLIBRARIES = libpst.la
-#lib_LTLIBRARIES = libpst.la
-#libpstincludedir = $(includedir)/libpst-4/libpst
-#libpstinclude_HEADERS = \
-#        common.h    \
-#        libpst.h    \
-#        libstrfunc.h\
-#        lzfu.h      \
-#        timeconv.h  \
-#        vbuf.h
+#noinst_LTLIBRARIES = libpst.la
+lib_LTLIBRARIES = libpst.la
+libpstincludedir = $(includedir)/libpst-4/libpst
+libpstinclude_HEADERS = \
+        common.h    \
+        libpst.h    \
+        libstrfunc.h\
+        lzfu.h      \
+        timeconv.h  \
+        vbuf.h
 
-#libpst_la_LDFLAGS = $(NO_UNDEFINED) -version-info 5:10:1
+libpst_la_LDFLAGS = $(NO_UNDEFINED) -version-info 5:10:1
 libpst_la_SOURCES = $(common_source) $(common_header)
 libpst_la_LIBADD = $(LTLIBICONV)
 EXTRA_DIST = $(am__append_4)

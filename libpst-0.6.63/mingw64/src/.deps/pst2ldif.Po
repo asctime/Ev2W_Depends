@@ -1,4 +1,5 @@
-pst2ldif.o: ../../src/pst2ldif.cpp D:/MSYS2/mingw64/include/c++/8.3.0/set \
+-fstack-protector-strong -fstack-protector-strong pst2ldif.o: \
+ ../../src/pst2ldif.cpp D:/MSYS2/mingw64/include/c++/8.3.0/set \
  D:/MSYS2/mingw64/include/c++/8.3.0/bits/stl_tree.h \
  D:/MSYS2/mingw64/include/c++/8.3.0/bits/stl_algobase.h \
  D:/MSYS2/mingw64/include/c++/8.3.0/x86_64-w64-mingw32/bits/c++config.h \
@@ -87,7 +88,7 @@ pst2ldif.o: ../../src/pst2ldif.cpp D:/MSYS2/mingw64/include/c++/8.3.0/set \
  D:/MSYS2/mingw64/include/c++/8.3.0/ext/atomicity.h \
  D:/MSYS2/mingw64/include/c++/8.3.0/x86_64-w64-mingw32/bits/gthr.h \
  D:/MSYS2/mingw64/include/c++/8.3.0/x86_64-w64-mingw32/bits/gthr-default.h \
- D:/MSYS2/mingw64/x86_64-w64-mingw32/include/pthread.h \
+ D:/MSYS2/mingw64/include/pthread.h \
  D:/MSYS2/mingw64/x86_64-w64-mingw32/include/errno.h \
  D:/MSYS2/mingw64/x86_64-w64-mingw32/include/sys/types.h \
  D:/MSYS2/mingw64/x86_64-w64-mingw32/include/process.h \
@@ -96,14 +97,14 @@ pst2ldif.o: ../../src/pst2ldif.cpp D:/MSYS2/mingw64/include/c++/8.3.0/set \
  D:/MSYS2/mingw64/lib/gcc/x86_64-w64-mingw32/8.3.0/include-fixed/syslimits.h \
  D:/MSYS2/mingw64/x86_64-w64-mingw32/include/limits.h \
  D:/MSYS2/mingw64/x86_64-w64-mingw32/include/signal.h \
- D:/MSYS2/mingw64/x86_64-w64-mingw32/include/pthread_signal.h \
+ D:/MSYS2/mingw64/include/pthread_signal.h \
  D:/MSYS2/mingw64/x86_64-w64-mingw32/include/time.h \
  D:/MSYS2/mingw64/x86_64-w64-mingw32/include/_timeval.h \
  D:/MSYS2/mingw64/x86_64-w64-mingw32/include/sys/timeb.h \
  D:/MSYS2/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
- D:/MSYS2/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
- D:/MSYS2/mingw64/x86_64-w64-mingw32/include/pthread_compat.h \
- D:/MSYS2/mingw64/x86_64-w64-mingw32/include/pthread_unistd.h \
+ D:/MSYS2/mingw64/include/pthread_time.h \
+ D:/MSYS2/mingw64/include/pthread_compat.h \
+ D:/MSYS2/mingw64/include/pthread_unistd.h \
  D:/MSYS2/mingw64/include/c++/8.3.0/x86_64-w64-mingw32/bits/atomic_word.h \
  D:/MSYS2/mingw64/include/c++/8.3.0/ext/string_conversions.h \
  D:/MSYS2/mingw64/include/c++/8.3.0/cstdlib \
@@ -333,7 +334,7 @@ pst2ldif.o: ../../src/pst2ldif.cpp D:/MSYS2/mingw64/include/c++/8.3.0/set \
  D:/MSYS2/mingw64/x86_64-w64-mingw32/include/getopt.h \
  D:/MSYS2/mingw64/x86_64-w64-mingw32/include/sys/stat.h \
  D:/MSYS2/mingw64/x86_64-w64-mingw32/include/dirent.h \
- D:/MSYS2/mingw64/x86_64-w64-mingw32/include/semaphore.h ../../src/lzfu.h
+ D:/MSYS2/mingw64/include/semaphore.h ../../src/lzfu.h
 
 D:/MSYS2/mingw64/include/c++/8.3.0/set:
 
@@ -513,7 +514,7 @@ D:/MSYS2/mingw64/include/c++/8.3.0/x86_64-w64-mingw32/bits/gthr.h:
 
 D:/MSYS2/mingw64/include/c++/8.3.0/x86_64-w64-mingw32/bits/gthr-default.h:
 
-D:/MSYS2/mingw64/x86_64-w64-mingw32/include/pthread.h:
+D:/MSYS2/mingw64/include/pthread.h:
 
 D:/MSYS2/mingw64/x86_64-w64-mingw32/include/errno.h:
 
@@ -531,7 +532,7 @@ D:/MSYS2/mingw64/x86_64-w64-mingw32/include/limits.h:
 
 D:/MSYS2/mingw64/x86_64-w64-mingw32/include/signal.h:
 
-D:/MSYS2/mingw64/x86_64-w64-mingw32/include/pthread_signal.h:
+D:/MSYS2/mingw64/include/pthread_signal.h:
 
 D:/MSYS2/mingw64/x86_64-w64-mingw32/include/time.h:
 
@@ -541,11 +542,11 @@ D:/MSYS2/mingw64/x86_64-w64-mingw32/include/sys/timeb.h:
 
 D:/MSYS2/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h:
 
-D:/MSYS2/mingw64/x86_64-w64-mingw32/include/pthread_time.h:
+D:/MSYS2/mingw64/include/pthread_time.h:
 
-D:/MSYS2/mingw64/x86_64-w64-mingw32/include/pthread_compat.h:
+D:/MSYS2/mingw64/include/pthread_compat.h:
 
-D:/MSYS2/mingw64/x86_64-w64-mingw32/include/pthread_unistd.h:
+D:/MSYS2/mingw64/include/pthread_unistd.h:
 
 D:/MSYS2/mingw64/include/c++/8.3.0/x86_64-w64-mingw32/bits/atomic_word.h:
 
@@ -1021,6 +1022,6 @@ D:/MSYS2/mingw64/x86_64-w64-mingw32/include/sys/stat.h:
 
 D:/MSYS2/mingw64/x86_64-w64-mingw32/include/dirent.h:
 
-D:/MSYS2/mingw64/x86_64-w64-mingw32/include/semaphore.h:
+D:/MSYS2/mingw64/include/semaphore.h:
 
 ../../src/lzfu.h:
