@@ -722,6 +722,8 @@ CPPFLAGS
 LDFLAGS
 CFLAGS
 CC
+OS_WIN32_FALSE
+OS_WIN32_TRUE
 ALL_LINGUAS
 INTLTOOL_PERL
 GMSGFMT
@@ -3482,6 +3484,25 @@ fi
 
 
 
+
+
+
+case "$host" in
+  *-*-mingw*)
+    os_win32=yes
+    ;;
+  *)
+    os_win32=no
+    ;;
+esac
+
+ if test "x$os_win32" = "xyes"; then
+  OS_WIN32_TRUE=
+  OS_WIN32_FALSE='#'
+else
+  OS_WIN32_TRUE='#'
+  OS_WIN32_FALSE=
+fi
 
 
 
@@ -14204,6 +14225,10 @@ fi
   ac_config_commands="$ac_config_commands po/stamp-it"
 
 
+if test -z "${OS_WIN32_TRUE}" && test -z "${OS_WIN32_FALSE}"; then
+  as_fn_error $? "conditional \"OS_WIN32\" was never defined.
+Usually this means the macro was only invoked conditionally." "$LINENO" 5
+fi
 if test -z "${AMDEP_TRUE}" && test -z "${AMDEP_FALSE}"; then
   as_fn_error $? "conditional \"AMDEP\" was never defined.
 Usually this means the macro was only invoked conditionally." "$LINENO" 5

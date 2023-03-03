@@ -1,6 +1,7 @@
 -fstack-protector-strong -fasynchronous-unwind-tables \
  gtkhtml-spell-marshal.lo: gtkhtml-spell-marshal.c \
- gtkhtml-spell-marshal.h D:/MSYS2/mingw64/include/glib-2.0/glib-object.h \
+ ../../../components/editor/gtkhtml-spell-marshal.h \
+ D:/MSYS2/mingw64/include/glib-2.0/glib-object.h \
  D:/MSYS2/mingw64/include/glib-2.0/gobject/gbinding.h \
  D:/MSYS2/mingw64/include/glib-2.0/glib.h \
  D:/MSYS2/mingw64/include/glib-2.0/glib/galloca.h \
@@ -137,7 +138,7 @@
  D:/MSYS2/mingw64/include/glib-2.0/gobject/gvaluetypes.h \
  D:/MSYS2/mingw64/include/glib-2.0/gobject/gobject-autocleanups.h
 
-gtkhtml-spell-marshal.h:
+../../../components/editor/gtkhtml-spell-marshal.h:
 
 D:/MSYS2/mingw64/include/glib-2.0/glib-object.h:
 

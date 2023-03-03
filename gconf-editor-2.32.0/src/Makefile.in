@@ -122,6 +122,9 @@ AM_V_lt = $(am__v_lt_@AM_V@)
 am__v_lt_ = $(am__v_lt_@AM_DEFAULT_V@)
 am__v_lt_0 = --silent
 am__v_lt_1 = 
+gconf_editor_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \
+	$(LIBTOOLFLAGS) --mode=link $(CCLD) $(AM_CFLAGS) $(CFLAGS) \
+	$(gconf_editor_LDFLAGS) $(LDFLAGS) -o $@
 AM_V_P = $(am__v_P_@AM_V@)
 am__v_P_ = $(am__v_P_@AM_DEFAULT_V@)
 am__v_P_0 = false
@@ -400,6 +403,7 @@ gconf_editor_SOURCES = \
 	$(gconf_editor_built_headers)	\
 	$(gconf_editor_built_cfiles)
 
+@OS_WIN32_TRUE@gconf_editor_LDFLAGS = -mwindows
 gconf_editor_LDADD = \
 	$(GCONF_EDITOR_LIBS) \
 	$(GCONF_EDITOR_POLKIT_LIBS)
@@ -492,7 +496,7 @@ clean-binPROGRAMS:
 
 gconf-editor$(EXEEXT): $(gconf_editor_OBJECTS) $(gconf_editor_DEPENDENCIES) $(EXTRA_gconf_editor_DEPENDENCIES) 
 	@rm -f gconf-editor$(EXEEXT)
-	$(AM_V_CCLD)$(LINK) $(gconf_editor_OBJECTS) $(gconf_editor_LDADD) $(LIBS)
+	$(AM_V_CCLD)$(gconf_editor_LINK) $(gconf_editor_OBJECTS) $(gconf_editor_LDADD) $(LIBS)
 
 mostlyclean-compile:
 	-rm -f *.$(OBJEXT)

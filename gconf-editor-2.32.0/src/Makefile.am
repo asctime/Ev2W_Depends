@@ -53,6 +53,9 @@ regenerate-built-sources:
 	&& echo "#include <gconf-marshal.h>" > gconf-marshal.c \
         && @GLIB_GENMARSHAL@ --prefix=gconf_marshal gconf-marshal.list --body >> gconf-marshal.c
 
+if OS_WIN32
+gconf_editor_LDFLAGS = -mwindows
+endif
 
 gconf_editor_LDADD = \
 	$(GCONF_EDITOR_LIBS) \
